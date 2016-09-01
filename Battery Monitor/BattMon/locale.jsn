@@ -1,0 +1,46 @@
+{
+  "default":"en",
+  "cz":{
+    "appName":"Monitor baterie",
+    "cfgName":"Nastavení monitoru baterie",
+    "voltage":"Napětí:",
+    "average":"Střední:",
+    "pack":"Sada: %dS",
+    "delta":"Rozdíl: %dmV, balancováno: %s%%",
+    "windowSmall":"Napětí baterie",
+    "sensor":"Výběr senzoru napětí",
+    "selectSensor":"Vyberte senzor"
+  },
+  "en":{
+    "appName":"Battery Monitor",
+    "cfgName":"Battery Mon. Settings",
+    "voltage":"Voltage:",
+    "average":"Average:",
+    "pack":"Pack: %dS",
+    "delta":"Delta: %dmV, balance: %s%%",
+    "windowSmall":"Battery Voltage",
+    "sensor":"Voltage sensor selection",
+    "selectSensor":"Select sensor"
+  },
+  "de":{
+    "appName":"Akkumonitor",
+    "cfgName":"Akkumonitor Einstellungen",
+    "voltage":"Spannung:",
+    "average":"Mitte:",
+    "pack":"Pack: %dS",
+    "delta": "Delta: %dmV, balance: %s%%",
+    "windowSmall":"Akku Spannung",
+    "sensor":"Spannungssensor Auswahl",
+    "selectSensor":"Wählen Sie Sensor"
+  },"fr":{
+    "appName":"Battery Monitor",
+    "cfgName":"Reglages",
+    "voltage":"Tension:",
+    "average":"Moyenne:",
+    "pack":"Pack: %dS",
+    "delta": "Delta: %dmV, balance: %s%%",
+    "windowSmall":"Battery Voltage",
+    "sensor":"Sélection du senseur de tension",
+    "selectSensor":"Sélection de senseur"
+  }
+}
