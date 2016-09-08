@@ -9,6 +9,7 @@
 -- # Can be used and changed non commercial                     
 -- #                       
 -- # V1.0 - Initial release
+-- # V1.1 - Displayed voltage values for the graph axes
 -- ############################################################################# 
 
 
@@ -266,12 +267,13 @@ local function printBattery(w,h)
   end
   
   -- Graph axis
-  lcd.drawLine(echX, ech100Y, echX, ech0Y, SOLID, GREY_DEFAULT)                                                    
+  lcd.drawLine(echX, ech100Y, echX, ech0Y)                                                    
   lcd.drawLine(echX+1, ech0Y, echX + gaugeGap + 5*(gaugeW + gaugeGap) + gaugeW, ech0Y)        
-
-  i = 10                                                                                                        
+  lcd.drawText(echX-25,0,"4.2V",FONT_MINI)
+  lcd.drawText(echX-25,ech0Y-5,"3.0V",FONT_MINI)
+  i = 6                                                                                                        
   while (i >= 0) do
-    lcd.drawLine(echX-2, (ech100Y+echH)-((echH/10)*i), echX-1, (ech100Y+echH)-((echH/10)*i))  
+    lcd.drawLine(echX-2, (ech100Y+echH)-((echH/6)*i), echX-1, (ech100Y+echH)-((echH/6)*i))  
     i= i-1
   end
   
