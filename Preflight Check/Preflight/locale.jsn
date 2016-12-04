@@ -27,5 +27,12 @@
     "audio":"Audio",
     "switch":"Interrupteur",
     "data":"data-fr.jsn" 
+  },
+  "es":{
+    "appName":"Control Pre-vuelo",
+    "cfgName":"Ajustes Control Pre-vuelo",
+    "audio":"Audio",
+    "switch":"Interruptor",
+    "data":"data-es.jsn" 
   }
 }
