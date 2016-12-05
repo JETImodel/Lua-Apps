@@ -50,7 +50,7 @@
     "pack":"Pack: %dS",
     "delta": "Delta: %dmV, balance: %s%%",
     "windowSmall":"Voltaje Batería",
-    "sensor":"Seleccion de sensor de tensión",
+    "sensor":"Selección de sensor de tensión",
     "selectSensor":"Selección de sensor"
   }
 }
