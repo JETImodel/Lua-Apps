@@ -1,0 +1,34 @@
+{
+  "default":"en",
+  "cz":{
+    "appName":"Napětí baterie",
+    "cfgName":"Nastavení senzoru baterie",
+    "voltage":"Napětí:", 
+    "windowSmall":"Napětí baterie",
+    "sensor":"Výběr senzoru napětí",
+    "selectSensor":"Vyberte senzor"
+  },
+  "en":{
+    "appName":"Battery Voltage",
+    "cfgName":"Battery Sensor Settings",
+    "voltage":"Voltage:", 
+    "windowSmall":"Battery Voltage",
+    "sensor":"Voltage sensor selection",
+    "selectSensor":"Select sensor"
+  },
+  "de":{
+    "appName":"Akkuspannung",
+    "cfgName":"Akkuspannung Einstellungen",
+    "voltage":"Spannung:",  
+    "windowSmall":"Akku Spannung",
+    "sensor":"Spannungssensor Auswahl",
+    "selectSensor":"Wählen Sie Sensor"
+  },"fr":{
+    "appName":"Battery Voltage",
+    "cfgName":"Reglages",
+    "voltage":"Tension:", 
+    "windowSmall":"Battery Voltage",
+    "sensor":"Sélection du senseur de tension",
+    "selectSensor":"Sélection de senseur"
+  }
+}
