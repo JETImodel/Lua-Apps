@@ -212,7 +212,7 @@ end
 -- Initialization
 --------------------------------------------------------------------
 -- Init function
-local function init() 
+local function init(code) 
   -- Load data
   local file = readFile("Apps/Preflight/"..lang.data)
   if(file) then
@@ -222,8 +222,8 @@ local function init()
   cfgAudio = system.pLoad("audio","T_Ding.wav")
   cfgSwitch = system.pLoad("switch")
   system.registerForm(1,MENU_ADVANCED,lang.appName,initForm,keyPressed,printForm);
-  -- Show the form
-  if(#optionsValues > 0) then
+  -- Show the form (only after model selection)
+  if(#optionsValues > 0 and code==1) then
     system.registerForm(0,0,lang.appName,initFormPrefl,keyPressedPrefl);
   end 
 end

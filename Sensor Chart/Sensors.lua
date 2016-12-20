@@ -35,7 +35,7 @@
 --------------------------------------------------------------------
 local appName="DC-24 Sensor chart"
 local sensorId, paramId
-local maximum
+local maximum,minimum
 local sensorsAvailable = {}
 local values = {}
 local latestVal
@@ -93,15 +93,22 @@ local getNextValue = emulator~=0 and randomGenerator() or getFromSensor()
 
 --------------------------------------------------------------------
 local function sensorChanged(value)
-  sensorId=sensorsAvailable[value].id
-  paramId=sensorsAvailable[value].param
-  system.pSave("sensor",sensorId)
-  system.pSave("param",paramId)      
+  if value>0 then
+    sensorId=sensorsAvailable[value].id
+    paramId=sensorsAvailable[value].param
+    system.pSave("sensor",sensorId)
+    system.pSave("param",paramId)
+  end      
 end
 
 local function maxChanged(value)
   maximum=value
   system.pSave("max",maximum)      
+end
+
+local function minChanged(value)
+  minimum=value
+  system.pSave("min",minimum)      
 end
 --------------------------------------------------------------------
 
@@ -129,7 +136,11 @@ local function initForm(formID)
   
   form.addRow(2)
   form.addLabel({label="Maximum value"})
-  form.addIntbox (maximum, 0,32000,100,0,1,maxChanged)
+  form.addIntbox (maximum, -32000,32000,100,0,1,maxChanged)
+  
+  form.addRow(2)
+  form.addLabel({label="Minimum value"})
+  form.addIntbox (minimum, -32000,32000,100,0,1,minChanged)
 end  
 
 local function keyPressed(key)
@@ -144,10 +155,9 @@ end
 --------------------------------------------------------------------
 local function printTelemetry(width, height)
   -- Print current telemetry
-  lcd.setColor(0xAA,0xAA,0xAA)
-  lcd.drawFilledRectangle(160,74,158,84)
   lcd.setColor(lcd.getFgColor())
-  lcd.drawLine(162,98,308,98)
+  lcd.drawRectangle(160,74,158,84)
+  lcd.drawLine(165,98,308,98)
   lcd.setColor(0,0,0)
   lcd.drawText(170,80,sensorlabel or "Value",FONT_BOLD)
   
@@ -163,7 +173,7 @@ local function printTelemetry(width, height)
   local offset = 11
   local lastV
   for i,v in pairs(values) do  
-    local v2=60-math.floor(v*60/maximum)
+    local v2=60-math.floor((v-minimum)*60/(maximum-minimum))
     if(lastV and lastV<65 and v ~= -100000) then  
       lcd.drawLine(offset,lastV,offset+3,v2)
       lcd.drawLine(offset,lastV-1,offset+3,v2-1)   
@@ -180,6 +190,7 @@ local function init()
   sensorId = system.pLoad("sensor")
   paramId = system.pLoad("param")
   maximum = system.pLoad("max",100)
+  minimum = system.pLoad("min",0)
   
   system.registerForm(1,MENU_TELEMETRY,appName,initForm,keyPressed,printForm);
   system.registerTelemetry(1,"Telemetry chart",3,printTelemetry); 
