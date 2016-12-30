@@ -9,6 +9,7 @@
     "selectSensor":"Vyberte senzor",
     "triggerVoltage": "trigger above(V)",
     "warnVoltage": "warn if below(V)",
+    "settleTime": "voltage settle time",
     "warnAudio": "Pack Warning",
     "modelName": "Model Name"
   },
@@ -21,6 +22,7 @@
     "selectSensor":"Select sensor",
     "triggerVoltage": "trigger above(V)",
     "warnVoltage": "warn if below(V)",
+    "settleTime": "voltage settle time",
     "warnAudio": "Pack Warning",
     "modelName": "Model Name"
   },
@@ -33,6 +35,7 @@
     "selectSensor":"Wählen Sie Sensor",
     "triggerVoltage": "trigger above(V)",
     "warnVoltage": "warn if below(V)",
+    "settleTime": "voltage settle time",
     "warnAudio": "Pack Warning",
     "modelName": "Model Name"
   },
@@ -45,6 +48,7 @@
     "selectSensor":"Sélection de senseur",
     "triggerVoltage": "trigger above(V)",
     "warnVoltage": "warn if below(V)",
+    "settleTime": "voltage settle time",
     "warnAudio": "Pack Warning",
     "modelName": "Model Name"
   }
