@@ -29,6 +29,7 @@
 -- # either expressed or implied, of the FreeBSD Project.                    
 -- #                       
 -- # V1.0 - Initial release
+-- # V1.1 - Added Spanish and Italian language
 -- #############################################################################
 
 --Configuration
@@ -253,4 +254,4 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.00",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.01",name=lang.appName}
