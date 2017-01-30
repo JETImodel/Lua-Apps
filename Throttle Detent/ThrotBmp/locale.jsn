@@ -1,0 +1,23 @@
+{
+  "default":"en",
+  "cz":{
+    "appName":"Throttle Detent/Beep",
+    "selectInput": "Select input",
+    "bumpValue": "Bump Value (center=0)"
+  },
+  "en":{
+    "appName":"Throttle Detent/Beep",
+    "selectInput": "Select input",
+    "bumpValue": "Bump Value (center=0)"
+  },
+  "de":{
+    "appName":"Throttle Detent/Beep",
+    "selectInput": "Select input",
+    "bumpValue": "Bump Value (center=0)"
+  },
+  "fr":{
+    "appName":"Throttle Detent/Beep",
+    "selectInput": "Select input",
+    "bumpValue": "Bump Value (center=0)"
+  }
+}

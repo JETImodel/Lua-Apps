@@ -1,0 +1,55 @@
+{
+  "default":"en",
+  "cz":{
+    "appName":"Discharged Flightpack Warning",
+    "cfgName":"Flightpack Sensor Settings",
+    "voltage":"Napětí:",
+    "windowSmall":"Napětí baterie",
+    "sensor":"Výběr senzoru napětí",
+    "selectSensor":"Vyberte senzor",
+    "triggerVoltage": "trigger above(V)",
+    "warnVoltage": "warn if below(V)",
+    "settleTime": "voltage settle time",
+    "warnAudio": "Pack Warning",
+    "modelName": "Model Name"
+  },
+  "en":{
+    "appName":"Discharged Flightpack Warning",
+    "cfgName":"Flightpack Sensor Settings",
+    "voltage":"Voltage:",
+    "windowSmall":"Battery Voltage",
+    "sensor":"Voltage sensor selection",
+    "selectSensor":"Select sensor",
+    "triggerVoltage": "trigger above(V)",
+    "warnVoltage": "warn if below(V)",
+    "settleTime": "voltage settle time",
+    "warnAudio": "Pack Warning",
+    "modelName": "Model Name"
+  },
+  "de":{
+    "appName":"Discharged Flightpack Warning",
+    "cfgName":"Flightpack Sensor Settings",
+    "voltage":"Spannung:",
+    "windowSmall":"Akku Spannung",
+    "sensor":"Spannungssensor Auswahl",
+    "selectSensor":"Wählen Sie Sensor",
+    "triggerVoltage": "trigger above(V)",
+    "warnVoltage": "warn if below(V)",
+    "settleTime": "voltage settle time",
+    "warnAudio": "Pack Warning",
+    "modelName": "Model Name"
+  },
+  "fr":{
+    "appName":"Discharged Flightpack Warning",
+    "cfgName":"Flightpack Sensor Settings",
+    "voltage":"Tension:",
+    "windowSmall":"Battery Voltage",
+    "sensor":"Sélection du senseur de tension",
+    "selectSensor":"Sélection de senseur",
+    "triggerVoltage": "trigger above(V)",
+    "warnVoltage": "warn if below(V)",
+    "settleTime": "voltage settle time",
+    "warnAudio": "Pack Warning",
+    "modelName": "Model Name"
+  }
+}
