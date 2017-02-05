@@ -27,5 +27,20 @@
     "audio":"Audio",
     "switch":"Interrupteur",
     "data":"data-fr.jsn" 
+  },
+  "it":{
+    "appName":"Checklist Prevolo",
+    "cfgName":"Regolazione parametri prevolo",
+    "audio":"Audio",
+    "switch":"Interruttore",
+    "data":"data-it.jsn" 
+
+  },
+  "es":{
+    "appName":"Control Pre-vuelo",
+    "cfgName":"Ajustes Control Pre-vuelo",
+    "audio":"Audio",
+    "switch":"Interruptor",
+    "data":"data-es.jsn" 
   }
 }

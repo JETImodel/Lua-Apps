@@ -29,6 +29,7 @@
 -- # either expressed or implied, of the FreeBSD Project.                    
 -- #                       
 -- # V1.0 - Initial release
+-- # V1.1 - Added choice of minimum sensor value
 -- #############################################################################
 
 
@@ -217,4 +218,4 @@ end
 
 --------------------------------------------------------------------
 
-return { init=init, loop=loop, author="JETI model", version="1.00",name=appName}
+return { init=init, loop=loop, author="JETI model", version="1.1",name=appName}

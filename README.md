@@ -21,11 +21,14 @@ The transmitter runs at this configuration:
 
 
  ## Available Applications
+ - **Automatic Trainer Switch** - Switch between teacher and student automatically. 
  - **Battery Monitor** - A display telemetry widget that shows voltages of up to 6 LiPo cells (measured by MULi6S).
+ - **Battery Voltage** - A simplified telemetry widget that shows voltages of up to 6 LiPo cells (measured by MULi6S). It doesn't offer balancing information nor approx. discharged percentage.
  - **DC-24 Presentation** - An application that can be run on Desktop and gives the user some basic features of the transmitter.
  - **Demos** - List of all demos included in the official API documentation. Each application demonstrates several API functions.
  - **Preflight Check** - Use this application as a preflight checklist, so that you will never forget any step necessary before flight. (Included in DC-24 SW version 4.10)
- - **Sensor Chart** - A display telemetry widget that can display any telemetry variable into a chart. (Included in DC-24 SW version 4.10) 
+ - **Sensor Chart** - A display telemetry widget that can display any telemetry variable into a chart. (Included in DC-24 SW version 4.10)
+ - **Source Dumper** - The app dumps compiled Lua chunks to files without debugging information (stripped down). Useful to shrink the app, reduce memory consumption, improve start-up time and prevent memory issues. 
 
 ##  Installation
 1. Connect the transmitter to PC and establish a link via USB (the transmitter is registered as a mass-storage device).
