@@ -1,4 +1,16 @@
-
+-- #############################################################################
+-- # Throttle Stick "Soft" Detent - Lua application for JETI DC/DS transmitters
+-- # Developed by Peter A Vogel, donated to JETI Model s.r.o via pull request
+-- #
+-- # Copyright (c) 2017, Peter A Vogel
+-- # All rights reserved.
+   # License donated to JETI Model s.r.o. for the benefit of JETI pilots
+-- #
+-- # License: Share alike
+-- # Can be used and changed non commercial
+-- #
+-- # V1.0 - Initial release
+-- #############################################################################
 --Configuration
 local input
 local bumpValue
