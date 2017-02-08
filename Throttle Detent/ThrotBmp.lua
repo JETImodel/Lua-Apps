@@ -4,12 +4,13 @@
 -- #
 -- # Copyright (c) 2017, Peter A Vogel
 -- # All rights reserved.
-   # License donated to JETI Model s.r.o. for the benefit of JETI pilots
+-- # License donated to JETI Model s.r.o. for the benefit of JETI pilots
 -- #
 -- # License: Share alike
 -- # Can be used and changed non commercial
 -- #
 -- # V1.0 - Initial release
+-- # V1.1 - The readFile() function has been replaced by internal io.readFile() (DC/DS FW V4.22)
 -- #############################################################################
 --Configuration
 local input
@@ -23,30 +24,14 @@ local appName="Throttle Detent/Beep"
 
 
 
---------------------------------------------------------------------
-local function readFile(path)
- local f = io.open(path,"r")
-  local lines={}
-  if(f) then
-    while 1 do
-      local buf=io.read(f,512)
-      if(buf ~= "")then
-        lines[#lines+1] = buf
-      else
-        break
-      end
-    end
-    io.close(f)
-    return table.concat(lines,"")
-  end
-end
+ 
 --------------------------------------------------------------------
 -- Configure language settings
 --------------------------------------------------------------------
 local function setLanguage()
   -- Set language
   local lng=system.getLocale()
-  local file = readFile("Apps/ThrotBmp/locale.jsn")
+  local file = io.readFile("Apps/ThrotBmp/locale.jsn")
   local obj = json.decode(file)
   if(obj) then
     lang = obj[lng] or obj[obj.default]
@@ -119,4 +104,4 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="Peter Vogel - Team JetiUSA", version="1.00",name=lang.appName}
+return { init=init, loop=loop, author="Peter Vogel - Team JetiUSA", version="1.1",name=lang.appName}

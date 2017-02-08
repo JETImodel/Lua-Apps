@@ -10,6 +10,7 @@
 -- #                       
 -- # V1.0 - Initial release
 -- # V1.1 - Displayed voltage values for the graph axes
+-- # V1.2 - The readFile() function has been replaced by internal io.readFile() (DC/DS FW V4.22)
 -- ############################################################################# 
 
 
@@ -97,30 +98,14 @@ function percentcell(targetVoltage)
   end --if
  return result
 end
---------------------------------------------------------------------
-local function readFile(path) 
- local f = io.open(path,"r")
-  local lines={}
-  if(f) then
-    while 1 do 
-      local buf=io.read(f,512)
-      if(buf ~= "")then 
-        lines[#lines+1] = buf
-      else
-        break   
-      end   
-    end 
-    io.close(f)
-    return table.concat(lines,"") 
-  end
-end  
+ 
 --------------------------------------------------------------------
 -- Configure language settings
 --------------------------------------------------------------------
 local function setLanguage()
   -- Set language
   local lng=system.getLocale();
-  local file = readFile("Apps/BattMon/locale.jsn")
+  local file = io.readFile("Apps/BattMon/locale.jsn")
   local obj = json.decode(file)  
   if(obj) then
     lang = obj[lng] or obj[obj.default]
@@ -430,7 +415,7 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.00",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.2",name=lang.appName}
 
 
 

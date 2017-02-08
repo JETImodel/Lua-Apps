@@ -1,7 +1,7 @@
 -- ############################################################################# 
--- # DC-24 Preflight Check - Lua application for JETI DC/DS transmitters  
+-- # DC/DS Preflight Check - Lua application for JETI DC/DS transmitters  
 -- #
--- # Copyright (c) 2016, JETI model s.r.o.
+-- # Copyright (c) 2016 - 2017, JETI model s.r.o.
 -- # All rights reserved.
 -- #
 -- # Redistribution and use in source and binary forms, with or without
@@ -30,6 +30,7 @@
 -- #                       
 -- # V1.0 - Initial release
 -- # V1.1 - Added Spanish and Italian language
+-- # V1.2 - The readFile() function has been replaced by internal io.readFile() (DC/DS FW V4.22)
 -- #############################################################################
 
 --Configuration
@@ -45,31 +46,14 @@ local checkboxes={}
 local currentForm=0
 local MAX_ITEMS = 20
 local lastSwitchValue=true
-
---------------------------------------------------------------------
-local function readFile(path) 
- local f = io.open(path,"r")
-  local lines={}
-  if(f) then
-    while 1 do 
-      local buf=io.read(f,512)
-      if(buf ~= "")then 
-        lines[#lines+1] = buf
-      else
-        break   
-      end   
-    end 
-    io.close(f)
-    return table.concat(lines,"") 
-  end
-end  
+ 
 --------------------------------------------------------------------
 -- Configure language settings
 --------------------------------------------------------------------
 local function setLanguage()
   -- Set language
   local lng=system.getLocale();
-  local file = readFile("Apps/Preflight/locale.jsn")
+  local file = io.readFile("Apps/Preflight/locale.jsn")
   local obj = json.decode(file)  
   if(obj) then
     lang = obj[lng] or obj[obj.default]
@@ -215,7 +199,7 @@ end
 -- Init function
 local function init(code) 
   -- Load data
-  local file = readFile("Apps/Preflight/"..lang.data)
+  local file = io.readFile("Apps/Preflight/"..lang.data)
   if(file) then
     options = json.decode(file)  
   end
@@ -254,4 +238,4 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.01",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.2",name=lang.appName}

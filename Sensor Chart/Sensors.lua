@@ -1,7 +1,7 @@
 -- ############################################################################# 
--- # DC-24 Sensor Chart - Lua application for JETI DC/DS transmitters 
+-- # DC/DS Sensor Chart - Lua application for JETI DC/DS transmitters 
 -- #
--- # Copyright (c) 2016, JETI model s.r.o.
+-- # Copyright (c) 2016 - 2017, JETI model s.r.o.
 -- # All rights reserved.
 -- #
 -- # Redistribution and use in source and binary forms, with or without
@@ -30,11 +30,12 @@
 -- #                       
 -- # V1.0 - Initial release
 -- # V1.1 - Added choice of minimum sensor value
+-- # V1.2 - Text typo when using DC/DS-14/16
 -- #############################################################################
 
 
 --------------------------------------------------------------------
-local appName="DC-24 Sensor chart"
+local appName="DC/DS Sensor Chart"
 local sensorId, paramId
 local maximum,minimum
 local sensorsAvailable = {}
@@ -218,4 +219,4 @@ end
 
 --------------------------------------------------------------------
 
-return { init=init, loop=loop, author="JETI model", version="1.1",name=appName}
+return { init=init, loop=loop, author="JETI model", version="1.2",name=appName}

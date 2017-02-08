@@ -1,17 +1,17 @@
 {
   "default":"en",
   "cz":{
-    "appName":"Discharged Flightpack Warning",
-    "cfgName":"Flightpack Sensor Settings",
+    "appName":"Kontrola baterie před letem",
+    "cfgName":"Nastavení senzoru napětí",
     "voltage":"Napětí:",
     "windowSmall":"Napětí baterie",
     "sensor":"Výběr senzoru napětí",
     "selectSensor":"Vyberte senzor",
-    "triggerVoltage": "trigger above(V)",
-    "warnVoltage": "warn if below(V)",
-    "settleTime": "voltage settle time",
-    "warnAudio": "Pack Warning",
-    "modelName": "Model Name"
+    "triggerVoltage": "Spustit při napětí(V)",
+    "warnVoltage": "Alarm při napětí pod (V)",
+    "settleTime": "Čas ustálení napětí",
+    "warnAudio": "Varování baterie",
+    "modelName": "Název modelu"
   },
   "en":{
     "appName":"Discharged Flightpack Warning",

@@ -73,7 +73,7 @@ local function exportFiles()
   for name, filetype, size in dir(path) do
     d,fn,ext = string.match(name, "(.-)([^/]-)%.([^/]+)$")
     if fn and ext then
-      print (fn,ext)
+      --print (fn,ext)
       if(string.lower(ext)=="lua") then
         print ("Exporting " .. name) 
         func = loadfile(path.."/"..name)

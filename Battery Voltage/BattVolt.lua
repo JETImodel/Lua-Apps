@@ -1,3 +1,16 @@
+-- ############################################################################# 
+-- # Battery Voltage - Lua application for JETI DC/DS transmitters
+-- # A simplified version of Battery Monitor application  
+-- #
+-- # Copyright (c) 2016 - 2017, JETI model s.r.o.
+-- # All rights reserved.
+-- #
+-- # License: Share alike                                       
+-- # Can be used and changed non commercial                     
+-- #                       
+-- # V1.0 - Initial release 
+-- # V1.1 - The readFile() function has been replaced by internal io.readFile() (DC/DS FW V4.22)
+-- #############################################################################
 
 --Configuration
 local sensorId=0
@@ -24,30 +37,14 @@ local cellsumpercent, precision, blink = 0, 0, 0
 local cellsumpercentminima, cellsumpercentmaxima = 100, 0                        
 local percentDelta  
  
---------------------------------------------------------------------
-local function readFile(path) 
- local f = io.open(path,"r")
-  local lines={}
-  if(f) then
-    while 1 do 
-      local buf=io.read(f,512)
-      if(buf ~= "")then 
-        lines[#lines+1] = buf
-      else
-        break   
-      end   
-    end 
-    io.close(f)
-    return table.concat(lines,"") 
-  end
-end  
+ 
 --------------------------------------------------------------------
 -- Configure language settings
 --------------------------------------------------------------------
 local function setLanguage()
   -- Set language
   local lng=system.getLocale();
-  local file = readFile("Apps/BattVolt/locale.jsn")
+  local file = io.readFile("Apps/BattVolt/locale.jsn")
   local obj = json.decode(file)  
   if(obj) then
     lang = obj[lng] or obj[obj.default]
@@ -190,7 +187,7 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.00",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.1",name=lang.appName}
 
 
 
