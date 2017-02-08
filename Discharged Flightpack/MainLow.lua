@@ -10,7 +10,7 @@
 -- # Can be used and changed non commercial
 -- #
 -- # V1.0 - Initial release
--- # V1.1 - The readFile() function has been replaced by internal io.readFile() (DC/DS FW V4.22)
+-- # V1.1 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
 -- #############################################################################
 
 
@@ -42,7 +42,7 @@ local voltageSettleTime = 5
 local function setLanguage()
   -- Set language
   local lng=system.getLocale()
-  local file = io.readFile("Apps/MainLow/locale.jsn")
+  local file = io.readall("Apps/MainLow/locale.jsn")
   local obj = json.decode(file)
   if(obj) then
     lang = obj[lng] or obj[obj.default]
@@ -127,7 +127,8 @@ end
 
 local function modelNameAudioChanged(value)
   if (value) then
-    system.pSave("modelAudio", value)
+    system.pSave("modelAudio", value) 
+    modelNameAudio = value 
   end
 end
 --------------------------------------------------------------------
@@ -156,13 +157,13 @@ local function initForm(formID)
   form.addLabel({label=lang.selectSensor,width=120})
   form.addSelectbox (list, curIndex,true,sensorChanged,{width=190})
   form.addRow(2)
-  form.addLabel({label=lang.triggerVoltage})
+  form.addLabel({label=lang.triggerVoltage, width=250})
   form.addIntbox(thresholdV,20,84,84,1,1, thresholdVChanged)
   form.addRow(2)
-  form.addLabel({label=lang.warnVoltage})
+  form.addLabel({label=lang.warnVoltage, width=250})
   form.addIntbox(warnV,41,840,410,1,1, warnVChanged)
   form.addRow(2)
-  form.addLabel({label=lang.settleTime})
+  form.addLabel({label=lang.settleTime, width=250})
   form.addIntbox(voltageSettleTime,1,10,2,0,1, voltageSettleTimeChanged)
   form.addRow(2)
   form.addLabel({label=lang.warnAudio})
@@ -174,10 +175,10 @@ end
 -- Initialization
 --------------------------------------------------------------------
 -- Init function
-local function init()
+local function init(code)
   -- play the model name if there is an audio file specified
   modelNameAudio = system.pLoad("modelAudio","")
-  if (modelNameAudio ~= "") then
+  if (modelNameAudio ~= "" and code==1) then
     system.playFile(modelNameAudio, AUDIO_IMMEDIATE)
   end
 

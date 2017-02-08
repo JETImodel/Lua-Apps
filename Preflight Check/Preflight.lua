@@ -30,7 +30,7 @@
 -- #                       
 -- # V1.0 - Initial release
 -- # V1.1 - Added Spanish and Italian language
--- # V1.2 - The readFile() function has been replaced by internal io.readFile() (DC/DS FW V4.22)
+-- # V1.2 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
 -- #############################################################################
 
 --Configuration
@@ -53,7 +53,7 @@ local lastSwitchValue=true
 local function setLanguage()
   -- Set language
   local lng=system.getLocale();
-  local file = io.readFile("Apps/Preflight/locale.jsn")
+  local file = io.readall("Apps/Preflight/locale.jsn")
   local obj = json.decode(file)  
   if(obj) then
     lang = obj[lng] or obj[obj.default]
@@ -199,7 +199,7 @@ end
 -- Init function
 local function init(code) 
   -- Load data
-  local file = io.readFile("Apps/Preflight/"..lang.data)
+  local file = io.readall("Apps/Preflight/"..lang.data)
   if(file) then
     options = json.decode(file)  
   end

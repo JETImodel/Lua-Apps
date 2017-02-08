@@ -1,14 +1,14 @@
 {
   "default":"en",
   "cz":{
-    "appName":"Kontrola baterie před letem",
+    "appName":"Kontrola baterie",
     "cfgName":"Nastavení senzoru napětí",
     "voltage":"Napětí:",
     "windowSmall":"Napětí baterie",
     "sensor":"Výběr senzoru napětí",
     "selectSensor":"Vyberte senzor",
-    "triggerVoltage": "Spustit při napětí(V)",
-    "warnVoltage": "Alarm při napětí pod (V)",
+    "triggerVoltage": "Spustit při napětí [V]",
+    "warnVoltage": "Alarm při napětí pod [V]",
     "settleTime": "Čas ustálení napětí",
     "warnAudio": "Varování baterie",
     "modelName": "Název modelu"

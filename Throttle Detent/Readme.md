@@ -6,5 +6,3 @@ In the settings (under Advanced Properties) you can select the input to use (sho
 
 Stick will vibrate briefly and you'll hear a 100ms 430hz beep when you are at the target value +/- 1%.  It will not vibrate again until you move off the target value and come back.
 
-### Known Issue
-Note, at the moment it always vibrates the LEFT stick (Mode 2/Mode 4) because I can't figure out how to tell from the switchInfo object whether P3/P4 is selected or P1/P2.  If you are flying mode 1 or mode 3, change line 99 (the call to system.vibration) to set the first parameter to true instead of false.

@@ -10,7 +10,7 @@
 -- #                       
 -- # V1.0 - Initial release
 -- # V1.1 - Displayed voltage values for the graph axes
--- # V1.2 - The readFile() function has been replaced by internal io.readFile() (DC/DS FW V4.22)
+-- # V1.2 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
 -- ############################################################################# 
 
 
@@ -105,7 +105,7 @@ end
 local function setLanguage()
   -- Set language
   local lng=system.getLocale();
-  local file = io.readFile("Apps/BattMon/locale.jsn")
+  local file = io.readall("Apps/BattMon/locale.jsn")
   local obj = json.decode(file)  
   if(obj) then
     lang = obj[lng] or obj[obj.default]

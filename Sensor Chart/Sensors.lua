@@ -35,7 +35,7 @@
 
 
 --------------------------------------------------------------------
-local appName="DC/DS Sensor Chart"
+local appName="Sensor Chart"
 local sensorId, paramId
 local maximum,minimum
 local sensorsAvailable = {}

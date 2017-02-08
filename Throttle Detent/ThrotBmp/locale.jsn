@@ -1,23 +1,23 @@
 {
   "default":"en",
-  "cz":{
-    "appName":"Throttle Detent/Beep",
-    "selectInput": "Select input",
-    "bumpValue": "Bump Value (center=0)"
-  },
   "en":{
-    "appName":"Aretace plynu/pípnutí",
+    "appName":"Thro. Detent/Beep",
+    "selectInput": "Select Input",
+    "bumpValue": "Bump Value (Center=0)"
+  },
+  "cz":{
+    "appName":"Aret. plynu/pípnutí",
     "selectInput": "Vyberte vstup",
     "bumpValue": "Hodnota pípnutí (střed=0)"
   },
   "de":{
     "appName":"Throttle Detent/Beep",
-    "selectInput": "Select input",
-    "bumpValue": "Bump Value (center=0)"
+    "selectInput": "Select Input",
+    "bumpValue": "Bump Value (Center=0)"
   },
   "fr":{
     "appName":"Throttle Detent/Beep",
-    "selectInput": "Select input",
-    "bumpValue": "Bump Value (center=0)"
+    "selectInput": "Select Input",
+    "bumpValue": "Bump Value (Center=0)"
   }
 }

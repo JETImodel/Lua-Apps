@@ -13,11 +13,13 @@ Based on Lua 5.3.1:
 
 ## Hardware specification
 The transmitter runs at this configuration:
--	MCU: STM32F439 @ 168MHz
--	External memory: 8MB (1MB reserved for framebuffer and system resources)
--	SD card support: Up to 32GB micro SDHC
--	Audio playback: MP3 (44.1kHz, 32kHz), WAV (8kHz, 11kHz, 16kHz, 22.05kHz, 32kHz, 44.1kHz; Mono/Stereo)
--	Vibration support: Left and right gimbal
+|  | DC/DS-16, DC/DS-14 | DC/DS-24 |
+| --- | --- | --- | 
+| MCU: | STM32F405 @ 168MHz | STM32F439 @ 168MHz |
+| External memory: | None | 8MB (1MB reserved for framebuffer and system resources) |
+| SD card support: | Up to 32GB micro SDHC  | Up to 32GB micro SDHC |
+| Audio playback: | WAV (8kHz, 11kHz, 16kHz, 22.05kHz, 32kHz, 44.1kHz; Mono/Stereo) | MP3 (44.1kHz, 32kHz), WAV (8kHz, 11kHz, 16kHz, 22.05kHz, 32kHz, 44.1kHz; Mono/Stereo) |
+| Vibration support: | None | Left and right gimbal |
 
 
 ## Available Applications
@@ -54,5 +56,5 @@ Using this procedure you will install the Lua application source files to your t
 
 
 **Notes:**
-- The file extension of compiled apps is set to ***.LC** which differenciates them from source-code based apps with ***.LUA** extension. Please note that even if the application names are the same, the resulting apps are considered different to each other.  
+- The file extension of compiled apps is set to **\*.LC** which differenciates them from source-code based apps with **\*.LUA** extension. Please note that even if the application names are the same, the resulting apps are considered different to each other.  
 - The compilation can be done using the [Lua Src Dumper](Src Dumper) application installed in DC-24 Emulator. The emulator is an integral part of the [JETI Studio software](http://www.jetimodel.com/en/JETI-Studio-2/).

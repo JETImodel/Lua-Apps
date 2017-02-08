@@ -9,7 +9,7 @@
 -- # Can be used and changed non commercial                     
 -- #                       
 -- # V1.0 - Initial release 
--- # V1.1 - The readFile() function has been replaced by internal io.readFile() (DC/DS FW V4.22)
+-- # V1.1 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
 -- #############################################################################
 
 --Configuration
@@ -44,7 +44,7 @@ local percentDelta
 local function setLanguage()
   -- Set language
   local lng=system.getLocale();
-  local file = io.readFile("Apps/BattVolt/locale.jsn")
+  local file = io.readall("Apps/BattVolt/locale.jsn")
   local obj = json.decode(file)  
   if(obj) then
     lang = obj[lng] or obj[obj.default]

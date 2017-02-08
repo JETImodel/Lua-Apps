@@ -10,17 +10,21 @@
 -- # Can be used and changed non commercial
 -- #
 -- # V1.0 - Initial release
--- # V1.1 - The readFile() function has been replaced by internal io.readFile() (DC/DS FW V4.22)
+-- # V1.1 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
+-- #        Increased reliability of bump value detection
+-- #        Automatic detection of throttle stick (P2 vs P4)
 -- #############################################################################
 --Configuration
 local input
 local bumpValue
+local lastValue
 local haveBumped = false
+local swInfo
 
 
 local lang
 
-local appName="Throttle Detent/Beep"
+local appName="Thro. Detent/Beep"
 
 
 
@@ -31,7 +35,7 @@ local appName="Throttle Detent/Beep"
 local function setLanguage()
   -- Set language
   local lng=system.getLocale()
-  local file = io.readFile("Apps/ThrotBmp/locale.jsn")
+  local file = io.readall("Apps/ThrotBmp/locale.jsn")
   local obj = json.decode(file)
   if(obj) then
     lang = obj[lng] or obj[obj.default]
@@ -62,7 +66,7 @@ local function initForm(formID)
   form.addLabel({label=lang.selectInput})
   form.addInputbox(input, true, inputChanged)
   form.addRow(2)
-  form.addLabel({label=lang.bumpValue})
+  form.addLabel({label=lang.bumpValue,width=250})
   form.addIntbox(bumpValue, -100, 100, 0, 0, 1, bumpValueChanged)
 end
 
@@ -89,16 +93,22 @@ local function loop()
   if (not val) then
     return
   end
+  if not lastValue then 
+    lastValue = val
+  end  
   local tol = 2
   val = val * 100
-  if (not haveBumped and (val >= bumpValue-tol and val <= bumpValue+tol)) then
+  if not haveBumped and ((val >= bumpValue-tol and lastValue < bumpValue-tol) or 
+     (val <= bumpValue+tol and lastValue > bumpValue+tol)) then  
     haveBumped = true
-    system.vibration(false, 2)
+    swInfo = system.getSwitchInfo(input)
+    system.vibration(swInfo.label=="P2", 2)
     system.playBeep(1, 430, 100)
   end
   if (haveBumped and (val < bumpValue-tol or val > bumpValue+tol)) then
     haveBumped = false
   end
+  lastValue = val
 end
 
 
