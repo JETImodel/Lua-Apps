@@ -1,5 +1,7 @@
-# Lua-Apps
+# Lua-Apps 
 Official Lua applications for DC/DS transmitters. Applications should be located in the Apps folder of the internal SD card.
+>**Note:** The applications in this repository are compatible with the upcoming firmware version **4.22** of JETI DC/DS transmitters. 
+
 ![img](http://www.jetimodel.com/files/photo-thumb/DSCN7506.jpg)
 
 
@@ -13,6 +15,7 @@ Based on Lua 5.3.1:
 
 ## Hardware specification
 The transmitter runs at this configuration:
+
 |  | DC/DS-16, DC/DS-14 | DC/DS-24 |
 | --- | --- | --- | 
 | MCU: | STM32F405 @ 168MHz | STM32F439 @ 168MHz |
