@@ -1,6 +1,6 @@
 # Lua-Apps 
 Official Lua applications for DC/DS transmitters. Applications should be located in the Apps folder of the internal SD card.
->**Note:** The applications in this repository are compatible with the upcoming firmware version **4.22** of JETI DC/DS transmitters. 
+>**Note:** The applications in this repository are compatible with the upcoming firmware version **4.22** of JETI DC/DS transmitters. Older versions are **_not supported_**.
 
 ![img](http://www.jetimodel.com/files/photo-thumb/DSCN7506.jpg)
 
