@@ -10,6 +10,7 @@
 -- #                       
 -- # V1.0 - Initial release 
 -- # V1.1 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
+-- #        Detection of inactive sensor.
 -- #############################################################################
 
 --Configuration
@@ -36,7 +37,7 @@ local i, cellmin, cellmax, cellresult = 0, cellfull, 0, 0
 local cellsumpercent, precision, blink = 0, 0, 0                                 
 local cellsumpercentminima, cellsumpercentmaxima = 100, 0                        
 local percentDelta  
- 
+local sensorValid=false  
  
 --------------------------------------------------------------------
 -- Configure language settings
@@ -55,7 +56,8 @@ end
 --------------------------------------------------------------------
 -- Get current voltage from sensor - return array of 6 values
 -------------------------------------------------------------------- 
-function getVoltages()
+local function getVoltages()
+  sensorValid=false
   if(sensorId==0) then 
     return 
   end
@@ -64,7 +66,8 @@ function getVoltages()
   for i = 1,6 do
     sensor = system.getSensorByID(sensorId,i)
     if sensor and sensor.valid then
-      cell[i] = sensor.value 
+      cell[i] = sensor.value
+      sensorValid=true  
     end
   end 
    
@@ -85,7 +88,7 @@ local function printBatterySmall(w,h)
   end            
   -- Print battery icon and voltages 
   for i = 1, 6 do     
-    blink = (cell[i] ~= 0 and cell[i] < cellempty) and true or false 
+    blink = (cell[i] ~= 0 and (cell[i] < cellempty or not sensorValid) ) and true or false
     if blink then
       lcd.setColor(lcd.getFgColor())
     else
@@ -95,7 +98,7 @@ local function printBatterySmall(w,h)
     lcd.drawLine(positionsSmall[i][1] + 2, positionsSmall[i][2] - 3, positionsSmall[i][1] - 2 + t, positionsSmall[i][2] - 3)
     lcd.drawFilledRectangle(positionsSmall[i][1]-1,positionsSmall[i][2] - 2,t+3,20)
     lcd.setColor(255-txtr,255-txtg,255-txtb)
-    lcd.drawNumber(positionsSmall[i][1], positionsSmall[i][2]-1, i, FONT_NORMAL)          
+    lcd.drawNumber(positionsSmall[i][1], positionsSmall[i][2]-1, i, FONT_NORMAL | FONT_XOR)          
     t = positionsSmall[i][1] + t + 8
     
     if cell[i] ~= 0 then 

@@ -11,6 +11,7 @@
 -- # V1.0 - Initial release
 -- # V1.1 - Displayed voltage values for the graph axes
 -- # V1.2 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
+-- #        Better displayed on DC/DS-16/14. Detection of inactive sensor.
 -- ############################################################################# 
 
 
@@ -67,16 +68,19 @@ local cellsumfull, cellsumempty, cellsumtype, cellsum = 0, 0, 0, 0
 local echX, ech100Y, ech0Y = 210, 4, 70                                           
 local echH = (ech0Y-ech100Y)  
 -- Space between gauges                                                    
-local gaugeW, gaugeGap = 12, 3                                                     
+local gaugeW, gaugeGap = 12, 3                                                    
 local i, cellmin, cellmax, cellresult = 0, cellfull, 0, 0                        
 local cellsumpercent, precision, blink = 0, 0, 0                                 
 local cellsumpercentminima, cellsumpercentmaxima = 100, 0                        
 local percentDelta  
+local sensorValid=false 
+
+
 
 --------------------------------------------------------------------
 ---- Calculate percentage voltage 
 --------------------------------------------------------------------
-function percentcell(targetVoltage)
+local function percentcell(targetVoltage)
   local result = 0
   if targetVoltage > cellfull or targetVoltage < cellempty then
     if  targetVoltage >= cellfull then                                            
@@ -117,7 +121,8 @@ end
 -- Get current voltage from sensor - return array of 6 values
 --------------------------------------------------------------------
 -- local values = {3.9, 3.85, 3.9, 4.0,4.1,4.2}
-function getVoltages()
+local function getVoltages()
+  sensorValid=false
   if(sensorId==0) then 
     return 
   end
@@ -132,7 +137,8 @@ function getVoltages()
   for i = 1,6 do
     sensor = system.getSensorByID(sensorId,i)
     if sensor and sensor.valid then
-      values[#values+1] = sensor.value 
+      values[#values+1] = sensor.value
+      sensorValid=true 
     end
   end 
   
@@ -192,7 +198,7 @@ local function printBattery(w,h)
   
   -- Maximum charged                        
   lcd.setColor(txtr,txtg, txtb , 100)
-  lcd.drawFilledRectangle(6, 11, cellsumpercentmaxima*44/100, 18 )         
+  lcd.drawFilledRectangle(6, 11, cellsumpercentmaxima*44/100,18,FONT_GRAYED)         
   lcd.setColor(lcd.getFgColor())
   -- Current value
   lcd.drawFilledRectangle(6, 11, cellsumpercent*44/100, 18 )                                
@@ -214,7 +220,7 @@ local function printBattery(w,h)
   
   
   for i = 1, 6 do    
-    blink = (cell[i] ~= 0 and cell[i] < cellempty) and true or false 
+    blink = (cell[i] ~= 0 and (cell[i] < cellempty or not sensorValid) ) and true or false 
     if blink then
       lcd.setColor(lcd.getFgColor())
     else
@@ -224,7 +230,7 @@ local function printBattery(w,h)
     lcd.drawLine(positions[i][1] + 2, positions[i][2] - 3, positions[i][1] - 2 + t, positions[i][2] - 3)
     lcd.drawFilledRectangle(positions[i][1]-1,positions[i][2] - 2,t+3,20)
     lcd.setColor(255-txtr,255-txtg,255-txtb)
-    lcd.drawNumber(positions[i][1], positions[i][2]-1, i, FONT_NORMAL)          
+    lcd.drawNumber(positions[i][1], positions[i][2]-1, i, FONT_NORMAL | FONT_XOR)          
     t = positions[i][1] + t + 8
     
     if cell[i] ~= 0 then 
@@ -237,7 +243,7 @@ local function printBattery(w,h)
       percentminima = math.floor(percentcell(cellminima[i]) * (echH/100))                    
       percentmaxima = math.floor(percentcell(cellmaxima[i]) * (echH/100))                    
       lcd.setColor(lcd.getFgColor())
-      lcd.drawFilledRectangle(echX + 2 + (i - 1) * (gaugeW + gaugeGap), (ech100Y + echH - percentmaxima), gaugeW, percentmaxima)                                  
+      lcd.drawFilledRectangle(echX + 2 + (i - 1) * (gaugeW + gaugeGap), (ech100Y + echH - percentmaxima), gaugeW, percentmaxima,FONT_GRAYED)                                  
       lcd.setColor(txtr,txtg, txtb)
       lcd.drawFilledRectangle(echX + 2 + (i - 1) * (gaugeW + gaugeGap), (ech100Y + echH - percent), gaugeW, percent)                                                              
       if percentminima < percent and percentminima > 0 then
@@ -312,7 +318,7 @@ local function printBatterySmall(w,h)
   end            
   -- Print battery icon and voltages 
   for i = 1, 6 do     
-    blink = (cell[i] ~= 0 and cell[i] < cellempty) and true or false 
+    blink = (cell[i] ~= 0 and (cell[i] < cellempty or not sensorValid) ) and true or false 
     if blink then
       lcd.setColor(lcd.getFgColor())
     else
@@ -322,7 +328,7 @@ local function printBatterySmall(w,h)
     lcd.drawLine(positionsSmall[i][1] + 2, positionsSmall[i][2] - 3, positionsSmall[i][1] - 2 + t, positionsSmall[i][2] - 3)
     lcd.drawFilledRectangle(positionsSmall[i][1]-1,positionsSmall[i][2] - 2,t+3,20)
     lcd.setColor(255-txtr,255-txtg,255-txtb)
-    lcd.drawNumber(positionsSmall[i][1], positionsSmall[i][2]-1, i, FONT_NORMAL)          
+    lcd.drawNumber(positionsSmall[i][1], positionsSmall[i][2]-1, i, FONT_NORMAL | FONT_XOR)          
     t = positionsSmall[i][1] + t + 8
     
     if cell[i] ~= 0 then 

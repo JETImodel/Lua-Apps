@@ -53,7 +53,7 @@ end
 --------------------------------------------------------------------
 -- Get current voltage from sensor - Alert if appropriate
 --------------------------------------------------------------------
-function getVoltages()
+local function getVoltages()
   if(sensorId==0) then
     return
   end
