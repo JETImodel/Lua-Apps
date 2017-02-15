@@ -23,6 +23,6 @@
   "it":{
     "appName":"Segnalatore Gas",
     "selectInput": "Segli Input",
-    "bumpValue": "Valore segn. (Centro=0)"
+    "bumpValue": "Posizione Segnale (Centro=0)"
   }
 }
