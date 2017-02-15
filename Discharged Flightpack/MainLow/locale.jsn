@@ -53,7 +53,7 @@
     "modelName": "Model Name"
   },
    "it":{
-    "appName":"Allarme Batt. Scarica",
+    "appName":"Allarme Batteria",
     "cfgName":"Impostazione Sensore Batteria",
     "voltage":"Voltaggio:",
     "windowSmall":"Voltaggio Batteria",
