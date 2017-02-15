@@ -3,26 +3,26 @@
   "en":{
     "appName":"Thro. Detent/Beep",
     "selectInput": "Select Input",
-    "bumpValue": "Bump Value (Center=0)"
+    "bumpValue": "Bump Value (Center=0%)"
   },
   "cz":{
     "appName":"Aret. plynu/pípnutí",
     "selectInput": "Vyberte vstup",
-    "bumpValue": "Hodnota pípnutí (střed=0)"
+    "bumpValue": "Hodnota pípnutí (střed=0%)"
   },
   "de":{
     "appName":"Throttle Detent/Beep",
     "selectInput": "Select Input",
-    "bumpValue": "Bump Value (Center=0)"
+    "bumpValue": "Bump Value (Center=0%)"
   },
   "fr":{
     "appName":"Throttle Detent/Beep",
     "selectInput": "Select Input",
-    "bumpValue": "Bump Value (Center=0)"
+    "bumpValue": "Bump Value (Center=0%)"
   },
   "it":{
     "appName":"Segnalatore Gas",
     "selectInput": "Segli Input",
-    "bumpValue": "Posizione Segnale (Centro=0)"
+    "bumpValue": "Posizione Segnale (Centro=0%)"
   }
 }

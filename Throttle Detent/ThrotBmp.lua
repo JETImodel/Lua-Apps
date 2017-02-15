@@ -67,7 +67,7 @@ local function initForm(formID)
   form.addInputbox(input, true, inputChanged)
   form.addRow(2)
   form.addLabel({label=lang.bumpValue,width=250})
-  form.addIntbox(bumpValue, -100, 100, 0, 0, 1, bumpValueChanged)
+  form.addIntbox(bumpValue, -100, 100, 0, 0, 1, bumpValueChanged,{label="%"})
 end
 
 
