@@ -52,5 +52,16 @@
     "windowSmall":"Voltaje Batería",
     "sensor":"Selección de sensor de tensión",
     "selectSensor":"Selección de sensor"
+  },
+  "it":{
+    "appName":"Monitor Batterie",
+    "cfgName":"Impostazioni Monitor Batt.",
+    "voltage":"Voltaggio:",
+    "average":"Media:",
+    "pack":"Pacco: %dS",
+    "delta":"Delta: %dmV, bilanciaamento: %s%%",
+    "windowSmall":"Voltaggio Batt.",
+    "sensor":"Seleziona sensore Volt.",
+    "selectSensor":"Scegli Sensore"
   }
 }
