@@ -59,7 +59,7 @@
     "voltage":"Voltaggio:",
     "average":"Media:",
     "pack":"Pacco: %dS",
-    "delta":"Delta: %dmV, bilanciaamento: %s%%",
+    "delta":"Delta: %dmV, bilanciamento: %s%%",
     "windowSmall":"Voltaggio Batt.",
     "sensor":"Seleziona sensore Volt.",
     "selectSensor":"Scegli Sensore"
