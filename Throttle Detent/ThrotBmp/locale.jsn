@@ -19,5 +19,10 @@
     "appName":"Throttle Detent/Beep",
     "selectInput": "Select Input",
     "bumpValue": "Bump Value (Center=0)"
+  },
+  "it":{
+    "appName":"Segnalatore Gas",
+    "selectInput": "Segli Input",
+    "bumpValue": "Valore segn. (Centro=0)"
   }
 }
