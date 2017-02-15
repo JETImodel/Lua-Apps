@@ -33,9 +33,9 @@
   },
   "it":{
     "appName":"Voltaggio Batteria",
-    "cfgName":"Impostazione Sensore BAtt.",
+    "cfgName":"Impostazione Sensore Batt.",
     "voltage":"Voltaggio:", 
-    "windowSmall":"Voltaggio Batt.",
+    "windowSmall":"Voltaggio Batteria",
     "sensor":"Selezione sensore Voltaggio",
     "selectSensor":"Scegli Sensore"
   }
