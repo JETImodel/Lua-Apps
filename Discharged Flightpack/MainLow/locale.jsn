@@ -53,16 +53,16 @@
     "modelName": "Model Name"
   },
    "it":{
-    "appName":"Allarme Batteria Scarica",
+    "appName":"Allarme Batt. Scarica",
     "cfgName":"Impostazione Sensore Batteria",
     "voltage":"Voltaggio:",
     "windowSmall":"Voltaggio Batteria",
-    "sensor":"Seleziona Sensore Volt.",
+    "sensor":"Seleziona Sensore Voltaggio",
     "selectSensor":"Scegli Sensore",
-    "triggerVoltage": "Innesco sopra(V)",
+    "triggerVoltage": "Innesco sopra (V)",
     "warnVoltage": "Avverti se inferiore a (V)",
-    "settleTime": "Tempo attesa voltaggio",
-    "warnAudio": "Allarme Pacco",
+    "settleTime": "Tempo attesa allarme",
+    "warnAudio": "Messaggio Allarme",
     "modelName": "Nome Modello"
   }
 }
