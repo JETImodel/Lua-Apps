@@ -51,5 +51,18 @@
     "settleTime": "voltage settle time",
     "warnAudio": "Pack Warning",
     "modelName": "Model Name"
+  },
+   "it":{
+    "appName":"Allarme Batteria Scarica",
+    "cfgName":"Impostazione Sensore Batteria",
+    "voltage":"Voltaggio:",
+    "windowSmall":"Voltaggio Batteria",
+    "sensor":"Seleziona Sensore Volt.",
+    "selectSensor":"Scegli Sensore",
+    "triggerVoltage": "Innesco sopra(V)",
+    "warnVoltage": "Avverti se inferiore a (V)",
+    "settleTime": "Tempo attesa voltaggio",
+    "warnAudio": "Allarme Pacco",
+    "modelName": "Nome Modello"
   }
 }
