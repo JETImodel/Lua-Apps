@@ -55,13 +55,13 @@
   },
   "it":{
     "appName":"Monitor Batterie",
-    "cfgName":"Impostazioni Monitor Batt.",
+    "cfgName":"Impostazioni Monitor Batteria",
     "voltage":"Voltaggio:",
     "average":"Media:",
     "pack":"Pacco: %dS",
     "delta":"Delta: %dmV, bilanciamento: %s%%",
-    "windowSmall":"Voltaggio Batt.",
-    "sensor":"Seleziona sensore Volt.",
+    "windowSmall":"Voltaggio Batteria",
+    "sensor":"Seleziona sensore Voltaggio",
     "selectSensor":"Scegli Sensore"
   }
 }
