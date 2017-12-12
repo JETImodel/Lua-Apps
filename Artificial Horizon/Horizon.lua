@@ -18,7 +18,7 @@
 --
 -- Version 1.0 - First official release, code cleanup
  
-local appName = "Artifficial Horizon"
+local appName = "Artificial Horizon"
 
 -- Various local variables
 local X1, Y1, X2, Y2, XH, YH
@@ -250,7 +250,7 @@ local parmHeading = {
   {0, 2, "N"}, {30, 5}, {60, 5},
   {90, 2, "E"}, {120, 5}, {150, 5},
   {180, 2, "S"}, {210, 5}, {240, 5},
-  {270, 2, "O"}, {300, 5}, {330, 5}
+  {270, 2, "W"}, {300, 5}, {330, 5}
 }
 
 local wrkHeading = 0
@@ -596,7 +596,7 @@ local function initForm()
       end
     end 
   end
-  form.addLabel({label="Artifficial horizon settings",font=1})
+  form.addLabel({label="Artificial horizon settings",font=1})
   form.addRow(2)
   form.addLabel({label="Roll sensor:",width=120})
   form.addSelectbox (list, curRIndex,true,sensorRollChanged,{width=190})

@@ -27,7 +27,7 @@ The transmitter runs at this configuration:
 
 ## Available Applications
  - **Automatic Trainer Switch** - Switch between teacher and student automatically. 
- - **Artifficial Horizon** - Displays an artifficial horizon on the transmitter main screen. This app is useful in connection with Assist receivers. 
+ - **Artificial Horizon** - Displays an artificial horizon on the transmitter main screen. This app is useful in connection with Assist receivers. 
  - **Battery Monitor** - A display telemetry widget that shows voltages of up to 6 LiPo cells (measured by MULi6S).
  - **Battery Voltage** - A simplified telemetry widget that shows voltages of up to 6 LiPo cells (measured by MULi6S). It doesn't offer balancing information nor approx. discharged percentage.
  - **DC-24 Presentation** - An application that can be run on Desktop and gives the user some basic features of the transmitter.
