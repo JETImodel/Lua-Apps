@@ -1,0 +1,43 @@
+{
+  "default":"en",
+  "cz":{
+    "appName":"Virtuální senzor", 
+    "sName":"Název senzoru",
+    "sUnit":"Jednotka senzoru",
+    "res":"Výsledek",
+    "selectSensor":"Vyberte senzor"
+  },
+  "en":{
+    "appName":"Virtual Sensor", 
+    "sName":"Sensor name",
+    "sUnit":"Sensor unit", 
+    "res":"Result",
+    "selectSensor":"Select sensor"
+  },
+  "de":{
+    "appName":"Virtueller Sensor", 
+    "sName":"Sensorname",
+    "sUnit":"Sensoreinheit",
+    "res":"Ergebnis",
+    "selectSensor":"Wählen Sie Sensor"
+  },"fr":{
+    "appName":"Capteur virtuel", 
+    "sName":"Nom du capteur",
+    "sUnit":"Unité de capteur",
+    "res":"Résultat",
+    "selectSensor":"Sélection de senseur"
+  },"es":{
+    "appName":"Sensor virtual", 
+    "sName":"Nombre del sensor",
+    "sUnit":"Unidad de sensor",
+    "res":"Resultado",
+    "selectSensor":"Selección de sensor"
+  },
+  "it":{
+    "appName":"Sensore virtuale", 
+    "sName":"Nome del sensore",
+    "sUnit":"Unità sensore",
+    "res":"Resultado",
+    "selectSensor":"Scegli Sensore"
+  }
+}
