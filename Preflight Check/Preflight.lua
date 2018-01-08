@@ -39,8 +39,7 @@ local cfgAudio
 local cfgSwitch
 --Local variables
 local lang
-local options={}
-local appName="Preflight Check"
+local options={} 
 local selectboxes={} 
 local checkboxes={}
 local currentForm=0

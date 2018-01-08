@@ -23,8 +23,7 @@ local swInfo
 
 
 local lang
-
-local appName="Thro. Detent/Beep"
+ 
 
 
 
