@@ -1,0 +1,17 @@
+{
+  "default":"en",
+  "en":{
+    "gpsPosFound":"GPS position found:",
+    "NOgpsPosFound":"No GPS position found!",
+    "googleLink":"Create a QR-Code with GoogleMap Link",
+    "creatQRcode":"QR-Code is created",
+    "creatQRcodeFailed":"Creat QR-Code failed !"
+  },
+  "de":{
+    "gpsPosFound":"GPS Position gefunden:",
+    "NOgpsPosFound":"Keine GPS-Position gefunden !",
+    "googleLink":"QR-Code mit GoogleMap Link erstellen",
+    "creatQRcode":"QR-Code wird erstellt",
+    "creatQRcodeFailed":"QR-Code erstellen fehlgeschlagen !"
+  }
+}
