@@ -5,9 +5,13 @@ The application displays an Artificial horizon on the transmitter main screen. T
 
 Based on code of dandys and Marco Ricci.
 
+## Compatibility
+There are two variants of the Horizon app:
+1. **Horizon.lua (compiled Horizon.lc)** - the app is compatible with all JETI DC/DS transmitters.
+2. **Horizon_24.lua (compiled Horizon_24.lc)** - the app is compatible with DC/DS-24 only since it uses an antialised rendering.  
 
 ## Installation
-1. Copy the Horizon.lua (or compiled Horizon.lc) file to the **Apps** folder of your transmitter. 
+1. Copy the _Horizon.lua_ (or compiled _Horizon.lc_) file and the _Horizon folder_ to the **Apps** folder of your transmitter. (For DC/DS-24: Copy the _Horizon_24.lua_ and _Horizon_24 folder_ instead). Alternatively you can install the correct version of the app via **JETI Studio**. 
 
 2. Locate the Applications - User Applications menu and select the "Horizon" app by pressing the **F(3)** button and launching the app browser. <br>
 ![User Applications](/Img/Artificial%20Horizon/Horizon1.png)

@@ -1,7 +1,7 @@
 {
   "default":"en",
   "cz":{
-    "appName":"Senzorový graf",
+    "appName":"Graf senzoru",
     "selectSensor":"Výběr senzoru",
     "maxValue":"Maximální hodnota",
     "minValue":"Minimální hodnota",
