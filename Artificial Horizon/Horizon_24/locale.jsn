@@ -1,7 +1,8 @@
 {
   "default":"en",
   "cz":{
-    "appName":"Umělý Horizont pro DC/DS-24",
+    "appName":"Uměl.Hor. DC/DS-24",
+    "fullName":"Umělý Horizont pro DC/DS-24",
     "cfgName":"Nastavení umělého horizontu",
     "rollSensor":"Senzor klonění",
     "pitchSensor":"Senzor klopení",
@@ -12,7 +13,8 @@
     "distSensor":"Vzdálenost"
   },
   "en":{
-    "appName":"Artificial Horizon for DC/DS-24",
+    "appName":"Artif.Hor.DC/DS-24",
+    "fullName":"Artificial Horizon for DC/DS-24",
     "cfgName":"Artificial horizon settings",
     "rollSensor":"Roll sensor",
     "pitchSensor":"Pitch sensor",
@@ -23,7 +25,8 @@
     "distSensor":"Distance sensor"
   },
   "de":{
-    "appName":"Artificial Horizon for DC/DS-24",
+    "appName":"Artif.Hor.DC/DS-24",
+    "fullName":"Artificial Horizon for DC/DS-24",
     "cfgName":"Artificial horizon settings",
     "rollSensor":"Roll sensor",
     "pitchSensor":"Pitch sensor",
@@ -33,7 +36,8 @@
     "hdgSensor":"Heading sensor",
     "distSensor":"Distance sensor"
   },"fr":{
-    "appName":"Artificial Horizon for DC/DS-24",
+    "appName":"Artif.Hor.DC/DS-24",
+    "fullName":"Artificial Horizon for DC/DS-24",
     "cfgName":"Artificial horizon settings",
     "rollSensor":"Roll sensor",
     "pitchSensor":"Pitch sensor",
@@ -43,7 +47,8 @@
     "hdgSensor":"Heading sensor",
     "distSensor":"Distance sensor"
   },"es":{
-    "appName":"Artificial Horizon for DC/DS-24",
+    "appName":"Artif.Hor.DC/DS-24",
+    "fullName":"Artificial Horizon for DC/DS-24",
     "cfgName":"Artificial horizon settings",
     "rollSensor":"Roll sensor",
     "pitchSensor":"Pitch sensor",
@@ -54,7 +59,8 @@
     "distSensor":"Distance sensor"
   },
   "it":{
-    "appName":"Artificial Horizon for DC/DS-24",
+    "appName":"Artif.Hor.DC/DS-24",
+    "fullName":"Artificial Horizon for DC/DS-24",
     "cfgName":"Artificial horizon settings",
     "rollSensor":"Roll sensor",
     "pitchSensor":"Pitch sensor",
