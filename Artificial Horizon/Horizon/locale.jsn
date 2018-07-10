@@ -1,0 +1,67 @@
+{
+  "default":"en",
+  "cz":{
+    "appName":"Umělý Horizont",
+    "cfgName":"Nastavení umělého horizontu",
+    "rollSensor":"Senzor klonění",
+    "pitchSensor":"Senzor klopení",
+    "altSensor":"Senzor výšky",
+    "varioSensor":"Senzor varia",
+    "speedSensor":"Senzor rychlosti",
+    "hdgSensor":"Senzor kurzu",
+    "distSensor":"Vzdálenost"
+  },
+  "en":{
+    "appName":"Artificial Horizon",
+    "cfgName":"Artificial horizon settings",
+    "rollSensor":"Roll sensor",
+    "pitchSensor":"Pitch sensor",
+    "altSensor":"Altitude sensor",
+    "varioSensor":"Vario sensor",
+    "speedSensor":"Speed sensor",
+    "hdgSensor":"Heading sensor",
+    "distSensor":"Distance sensor"
+  },
+  "de":{
+    "appName":"Artificial Horizon",
+    "cfgName":"Artificial horizon settings",
+    "rollSensor":"Roll sensor",
+    "pitchSensor":"Pitch sensor",
+    "altSensor":"Altitude sensor",
+    "varioSensor":"Vario sensor",
+    "speedSensor":"Speed sensor",
+    "hdgSensor":"Heading sensor",
+    "distSensor":"Distance sensor"
+  },"fr":{
+    "appName":"Artificial Horizon",
+    "cfgName":"Artificial horizon settings",
+    "rollSensor":"Roll sensor",
+    "pitchSensor":"Pitch sensor",
+    "altSensor":"Altitude sensor",
+    "varioSensor":"Vario sensor",
+    "speedSensor":"Speed sensor",
+    "hdgSensor":"Heading sensor",
+    "distSensor":"Distance sensor"
+  },"es":{
+    "appName":"Artificial Horizon",
+    "cfgName":"Artificial horizon settings",
+    "rollSensor":"Roll sensor",
+    "pitchSensor":"Pitch sensor",
+    "altSensor":"Altitude sensor",
+    "varioSensor":"Vario sensor",
+    "speedSensor":"Speed sensor",
+    "hdgSensor":"Heading sensor",
+    "distSensor":"Distance sensor"
+  },
+  "it":{
+    "appName":"Artificial Horizon",
+    "cfgName":"Artificial horizon settings",
+    "rollSensor":"Roll sensor",
+    "pitchSensor":"Pitch sensor",
+    "altSensor":"Altitude sensor",
+    "varioSensor":"Vario sensor",
+    "speedSensor":"Speed sensor",
+    "hdgSensor":"Heading sensor",
+    "distSensor":"Distance sensor"
+  }
+}

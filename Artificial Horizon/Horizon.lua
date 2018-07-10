@@ -17,10 +17,9 @@
 -- https://github.com/wolkstein/MavLink_FrSkySPort
 --
 -- Version 1.0 - First official release, code cleanup
- 
-local appName = "Artificial Horizon"
 
 -- Various local variables
+local lang
 local X1, Y1, X2, Y2, XH, YH
 local delta, deltaX, deltaY
 local getTelemetryValues
@@ -44,6 +43,19 @@ local sensorHId, paramHId
 local sensorVId, paramVId
 -- Distance sensor (m)
 local sensorDistId, paramDistId
+
+-- *****************************************************
+-- Configure language settings
+-- *****************************************************
+local function setLanguage()
+  -- Set language
+  local lng=system.getLocale();
+  local file = io.readall("Apps/Horizon/locale.jsn")
+  local obj = json.decode(file)
+  if(obj) then
+    lang = obj[lng] or obj[obj.default]
+  end
+end
 
 -- *****************************************************
 -- Optimizations - local variables
@@ -596,27 +608,27 @@ local function initForm()
       end
     end 
   end
-  form.addLabel({label="Artificial horizon settings",font=1})
+  form.addLabel({label=lang.cfgName,font=1})
   form.addRow(2)
-  form.addLabel({label="Roll sensor:",width=120})
+  form.addLabel({label=lang.rollSensor,width=120})
   form.addSelectbox (list, curRIndex,true,sensorRollChanged,{width=190})
   form.addRow(2)
-  form.addLabel({label="Pitch sensor:",width=120})
+  form.addLabel({label=lang.pitchSensor,width=120})
   form.addSelectbox (list, curPIndex,true,sensorPitchChanged,{width=190})
   form.addRow(2)
-  form.addLabel({label="Altitude sensor:",width=120})
+  form.addLabel({label=lang.altSensor,width=120})
   form.addSelectbox (list, curAIndex,true,sensorAltChanged,{width=190})
   form.addRow(2)
-  form.addLabel({label="Vario sensor:",width=120})
+  form.addLabel({label=lang.varioSensor,width=120})
   form.addSelectbox (list, curVIndex,true,sensorVarioChanged,{width=190})
   form.addRow(2)
-  form.addLabel({label="Speed sensor:",width=120})
+  form.addLabel({label=lang.speedSensor,width=120})
   form.addSelectbox (list, curSIndex,true,sensorSpeedChanged,{width=190})
   form.addRow(2)
-  form.addLabel({label="Heading sensor:",width=120})
+  form.addLabel({label=lang.hdgSensor,width=120})
   form.addSelectbox (list, curHIndex,true,sensorHeadChanged,{width=190})
   form.addRow(2)
-  form.addLabel({label="Distance sensor:",width=120})
+  form.addLabel({label=lang.distSensor,width=120})
   form.addSelectbox (list, curDIndex,true,sensorDistChanged,{width=190})
 
 end
@@ -668,11 +680,11 @@ local function init()
     getTelemetryValues = getTelemetryValuesEX
   end
   
-  system.registerForm(1,MENU_TELEMETRY,appName,initForm,keyPressed,printForm);
-  system.registerTelemetry(1,appName,4,printTelemetry); 
+  system.registerForm(1,MENU_TELEMETRY,lang.appName,initForm,keyPressed,printForm);
+  system.registerTelemetry(1,lang.appName,4,printTelemetry);
   
 end
 
 -- *****************************************************
 
-return { init=init, loop=loop, author="JETI model", version="1.00",name=appName}
+return { init=init, loop=loop, author="JETI model", version="1.00",name=lang.appName}

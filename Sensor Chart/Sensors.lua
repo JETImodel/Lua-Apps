@@ -35,7 +35,7 @@
 
 
 --------------------------------------------------------------------
-local appName="Sensor Chart"
+local lang
 local sensorId, paramId
 local maximum,minimum
 local sensorsAvailable = {}
@@ -131,17 +131,17 @@ local function initForm(formID)
       end
     end 
   end
-  form.addLabel({label="Sensor chart",font=2})
+  form.addLabel({label=lang.appName,font=2})
   form.addRow(2)
-  form.addLabel({label="Select sensor",width=120})
+  form.addLabel({label=lang.selectSensor,width=120})
   form.addSelectbox (list, curIndex,true,sensorChanged,{width=190})
   
   form.addRow(2)
-  form.addLabel({label="Maximum value"})
+  form.addLabel({label=lang.maxValue})
   form.addIntbox (maximum, -32000,32000,100,0,1,maxChanged)
   
   form.addRow(2)
-  form.addLabel({label="Minimum value"})
+  form.addLabel({label=lang.minValue})
   form.addIntbox (minimum, -32000,32000,100,0,1,minChanged)
 end  
 
@@ -161,7 +161,7 @@ local function printTelemetry(width, height)
   lcd.drawRectangle(160,74,158,84)
   lcd.drawLine(165,98,308,98)
   lcd.setColor(0,0,0)
-  lcd.drawText(170,80,sensorlabel or "Value",FONT_BOLD)
+  lcd.drawText(170,80,sensorlabel or lang.value,FONT_BOLD)
   
   if(latestVal and latestVal ~= -100000) then
     local text = string.format("%.1f%s",latestVal,sensorunit or "")
@@ -184,6 +184,18 @@ local function printTelemetry(width, height)
     lastV=v2
   end
 end 
+
+
+--------------------------------------------------------------------
+-- Configure language settings
+local function setLanguage()
+  local lng=system.getLocale();
+  local file = io.readall("Apps/Sensors/locale.jsn")
+  local obj = json.decode(file)
+  if(obj) then
+    lang = obj[lng] or obj[obj.default]
+  end
+end
  
 
 --------------------------------------------------------------------
@@ -202,8 +214,6 @@ local function init()
 end
 
 
-  
-
 --------------------------------------------------------------------
 -- Loop function
 local function loop() 
@@ -218,5 +228,5 @@ end
  
 
 --------------------------------------------------------------------
-
-return { init=init, loop=loop, author="JETI model", version="1.2",name=appName}
+setLanguage()
+return { init=init, loop=loop, author="JETI model", version="1.2",name=lang.appName}
