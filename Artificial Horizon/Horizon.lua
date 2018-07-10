@@ -686,5 +686,5 @@ local function init()
 end
 
 -- *****************************************************
-
+setLanguage()
 return { init=init, loop=loop, author="JETI model", version="1.00",name=lang.appName}

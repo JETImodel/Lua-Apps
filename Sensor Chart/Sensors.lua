@@ -206,8 +206,8 @@ local function init()
   maximum = system.pLoad("max",100)
   minimum = system.pLoad("min",0)
   
-  system.registerForm(1,MENU_TELEMETRY,appName,initForm,keyPressed,printForm);
-  system.registerTelemetry(1,"Telemetry chart",3,printTelemetry); 
+  system.registerForm(1,MENU_TELEMETRY,lang.appName,initForm,keyPressed,printForm);
+  system.registerTelemetry(1,lang.telChart,3,printTelemetry); 
   for i=1,100 do
     values[i] = -100000
   end   
