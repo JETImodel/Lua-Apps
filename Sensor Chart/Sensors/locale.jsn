@@ -1,0 +1,49 @@
+{
+  "default":"en",
+  "cz":{
+    "appName":"Senzorový graf",
+    "selectSensor":"Výběr senzoru",
+    "maxValue":"Maximální hodnota",
+    "minValue":"Minimální hodnota",
+    "telChart":"Graf telemetrie",
+    "value":"Hodnota"
+  },
+  "en":{
+    "appName":"Sensor chart",
+    "selectSensor":"Select sensor",
+    "maxValue":"Maximum value",
+    "minValue":"Minimum value",
+    "telChart":"Telemetry chart",
+    "value":"Value"
+  },
+  "de":{
+    "appName":"Sensor chart",
+    "selectSensor":"Select sensor",
+    "maxValue":"Maximum value",
+    "minValue":"Minimum value",
+    "telChart":"Telemetry chart",
+    "value":"Value"
+  },"fr":{
+    "appName":"Sensor chart",
+    "selectSensor":"Select sensor",
+    "maxValue":"Maximum value",
+    "minValue":"Minimum value",
+    "telChart":"Telemetry chart",
+    "value":"Value"
+  },"es":{
+    "appName":"Sensor chart",
+    "selectSensor":"Select sensor",
+    "maxValue":"Maximum value",
+    "minValue":"Minimum value",
+    "telChart":"Telemetry chart",
+    "value":"Value"
+  },
+  "it":{
+    "appName":"Sensor chart",
+    "selectSensor":"Select sensor",
+    "maxValue":"Maximum value",
+    "minValue":"Minimum value",
+    "telChart":"Telemetry chart",
+    "value":"Value"
+  }
+}

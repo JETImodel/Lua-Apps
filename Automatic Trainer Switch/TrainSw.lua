@@ -1,6 +1,6 @@
 -- Automatic trainer switch - Lua application for JETI DC/DS transmitters
 --------------- 
-local appName="Auto TrainSwitch"
+local lang
 local prevP1, prevP2, prevP3, prevP4
 local playedFileT = ""
 local playedFileS = ""
@@ -11,19 +11,30 @@ local teacher = 0
 local ctrlIdx 
 -------------- 
 
+--------------------------------------------------------------------
+-- Configure language settings
+local function setLanguage()
+  local lng=system.getLocale();
+  local file = io.readall("Apps/TrainSw/locale.jsn")
+  local obj = json.decode(file)
+  if(obj) then
+    lang = obj[lng] or obj[obj.default]
+  end
+end
+
 local function initForm(formID)
  
-  form.addLabel({label="Automatic Trainer Switch",font=2})
+  form.addLabel({label=lang.fullName,font=2})
   form.addRow(2)
-  form.addLabel({label="Audio Teacher"})
+  form.addLabel({label=lang.audioTeacher})
   form.addAudioFilebox(playedFileT, function(value) playedFileT=value; system.pSave("fileT",value) end)
   
   form.addRow(2)
-  form.addLabel({label="Audio Student"})
+  form.addLabel({label=lang.audioStudent})
   form.addAudioFilebox(playedFileS, function(value) playedFileS=value; system.pSave("fileS",value) end)
   
   form.addRow(2)
-  form.addLabel({label="Switch"})
+  form.addLabel({label=lang.switch})
   form.addInputbox(switch,true, function(value) switch=value;system.pSave("switch",value); end ) 
    
 end  
@@ -44,7 +55,7 @@ local function init()
   playedFileT = system.pLoad("fileT","")
   playedFileS = system.pLoad("fileS","")
   switch = system.pLoad("switch") 
-  system.registerForm(1,MENU_ADVANCED,appName,initForm,keyPressed,printForm);
+  system.registerForm(1,MENU_ADVANCED,lang.appName,initForm,keyPressed,printForm);
   ctrlIdx = system.registerControl(1, "Trainer Switch","T/S") 
 end
  
@@ -81,5 +92,5 @@ end
  
 
 ----------------- 
-
-return { init=init, loop=loop, author="JETI model", version="1.00",name=appName}
+setLanguage()
+return { init=init, loop=loop, author="JETI model", version="1.00",name=lang.appName}

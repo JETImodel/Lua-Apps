@@ -1,0 +1,43 @@
+{
+  "default":"en",
+  "cz":{
+    "appName":"Auto Přep.Výcviku",
+    "fullName":"Automatický Přepínač Výcviku",
+    "audioTeacher":"Audio Učitel",
+    "audioStudent":"Audio Student",
+    "switch":"Přepínač"
+  },
+  "en":{
+    "appName":"Auto TrainSwitch",
+    "fullName":"Automatic Training Switch",
+    "audioTeacher":"Audio Teacher",
+    "audioStudent":"Audio Student",
+    "switch":"Switch"
+  },
+  "de":{
+    "appName":"Auto TrainSwitch",
+    "fullName":"Automatic Training Switch",
+    "audioTeacher":"Audio Teacher",
+    "audioStudent":"Audio Student",
+    "switch":"Switch"
+  },"fr":{
+    "appName":"Auto TrainSwitch",
+    "fullName":"Automatic Training Switch",
+    "audioTeacher":"Audio Teacher",
+    "audioStudent":"Audio Student",
+    "switch":"Switch"
+  },"es":{
+    "appName":"Auto TrainSwitch",
+    "fullName":"Automatic Training Switch",
+    "audioTeacher":"Audio Teacher",
+    "audioStudent":"Audio Student",
+    "switch":"Switch"
+  },
+  "it":{
+    "appName":"Auto TrainSwitch",
+    "fullName":"Automatic Training Switch",
+    "audioTeacher":"Audio Teacher",
+    "audioStudent":"Audio Student",
+    "switch":"Switch"
+  }
+}
