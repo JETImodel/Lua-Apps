@@ -11,9 +11,9 @@
     "bumpValue": "Hodnota pípnutí (střed=0%)"
   },
   "de":{
-    "appName":"Throttle Detent/Beep",
-    "selectInput": "Select Input",
-    "bumpValue": "Bump Value (Center=0%)"
+    "appName":"Drosselstopp / Piepton",
+    "selectInput": "Wähle Eingang",
+    "bumpValue": "Piepwert (Mitte=0%)"
   },
   "fr":{
     "appName":"Throttle Detent/Beep",

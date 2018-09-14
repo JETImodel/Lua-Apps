@@ -11,6 +11,7 @@
 -- #
 -- # V1.0 - Initial release
 -- # V1.1 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
+-- # V1.2 - Translations to several languages
 -- #############################################################################
 
 
@@ -208,4 +209,4 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="Peter Vogel - Team JetiUSA", version="1.1",name=lang.appName}
+return { init=init, loop=loop, author="Peter Vogel - Team JetiUSA", version="1.2",name=lang.appName}

@@ -13,6 +13,7 @@
 -- # V1.1 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
 -- #        Increased reliability of bump value detection
 -- #        Automatic detection of throttle stick (P2 vs P4)
+-- # V1.2 - Improved translations to different languages
 -- #############################################################################
 --Configuration
 local input
@@ -114,4 +115,4 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="Peter Vogel - Team JetiUSA", version="1.1",name=lang.appName}
+return { init=init, loop=loop, author="Peter Vogel - Team JetiUSA", version="1.2",name=lang.appName}

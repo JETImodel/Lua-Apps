@@ -17,6 +17,7 @@
 -- https://github.com/wolkstein/MavLink_FrSkySPort
 --
 -- Version 1.0 - First official release, code cleanup
+--         1.1 - Translations to several languages
 
 -- Various local variables
 local lang
@@ -687,4 +688,4 @@ end
 
 -- *****************************************************
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.00",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.01",name=lang.appName}

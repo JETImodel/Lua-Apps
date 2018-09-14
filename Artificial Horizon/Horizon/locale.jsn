@@ -9,7 +9,7 @@
     "varioSensor":"Senzor varia",
     "speedSensor":"Senzor rychlosti",
     "hdgSensor":"Senzor kurzu",
-    "distSensor":"Vzdálenost"
+    "distSensor":"Senz. vzdálenosti"
   },
   "en":{
     "appName":"Artificial Horizon",
@@ -23,26 +23,16 @@
     "distSensor":"Distance sensor"
   },
   "de":{
-    "appName":"Artificial Horizon",
-    "cfgName":"Artificial horizon settings",
-    "rollSensor":"Roll sensor",
-    "pitchSensor":"Pitch sensor",
-    "altSensor":"Altitude sensor",
-    "varioSensor":"Vario sensor",
-    "speedSensor":"Speed sensor",
-    "hdgSensor":"Heading sensor",
-    "distSensor":"Distance sensor"
+    "appName":"Künstlicher Horizont",
+    "cfgName":"Einstellungen künstl. Horizont",
+    "rollSensor":"Rollsensor",
+    "pitchSensor":"Nicksensor",
+    "altSensor":"Höhensensor",
+    "varioSensor":"Variosensor",
+    "speedSensor":"Geschw.sensor",
+    "hdgSensor":"Richtungssensor",
+    "distSensor":"Entfernungssensor"
   },"fr":{
-    "appName":"Artificial Horizon",
-    "cfgName":"Artificial horizon settings",
-    "rollSensor":"Roll sensor",
-    "pitchSensor":"Pitch sensor",
-    "altSensor":"Altitude sensor",
-    "varioSensor":"Vario sensor",
-    "speedSensor":"Speed sensor",
-    "hdgSensor":"Heading sensor",
-    "distSensor":"Distance sensor"
-  },"es":{
     "appName":"Artificial Horizon",
     "cfgName":"Artificial horizon settings",
     "rollSensor":"Roll sensor",
@@ -54,14 +44,14 @@
     "distSensor":"Distance sensor"
   },
   "it":{
-    "appName":"Artificial Horizon",
-    "cfgName":"Artificial horizon settings",
-    "rollSensor":"Roll sensor",
-    "pitchSensor":"Pitch sensor",
-    "altSensor":"Altitude sensor",
-    "varioSensor":"Vario sensor",
-    "speedSensor":"Speed sensor",
-    "hdgSensor":"Heading sensor",
-    "distSensor":"Distance sensor"
+    "appName":"Orizzonte Artificiale",
+    "cfgName":"Impostazioni Orizzonte Artificiale",
+    "rollSensor":"Sensore Rollio",
+    "pitchSensor":"Sensore Beccheggio",
+    "altSensor":"Sensore Altitudine",
+    "varioSensor":"Sensore Vario",
+    "speedSensor":"Sensore Velocità,
+    "hdgSensor":"Sensore Direzione",
+    "distSensor":"Sensore Distanza"
   }
 }

@@ -18,11 +18,11 @@
   },
   "de":{
     "appName":"Akkuspannung",
-    "cfgName":"Akkuspannung Einstellungen",
+    "cfgName":"Akkuspannungseinstellungen",
     "voltage":"Spannung:",  
-    "windowSmall":"Akku Spannung",
+    "windowSmall":"Akkuspannung",
     "sensor":"Spannungssensor Auswahl",
-    "selectSensor":"Wählen Sie Sensor"
+    "selectSensor":"Sensorauswahl"
   },"fr":{
     "appName":"Battery Voltage",
     "cfgName":"Reglages",

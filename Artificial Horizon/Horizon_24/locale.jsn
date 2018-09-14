@@ -1,7 +1,7 @@
 {
   "default":"en",
   "cz":{
-    "appName":"Uměl.Hor. DC/DS-24",
+    "appName":"Horizont DC/DS-24",
     "fullName":"Umělý Horizont pro DC/DS-24",
     "cfgName":"Nastavení umělého horizontu",
     "rollSensor":"Senzor klonění",
@@ -10,10 +10,10 @@
     "varioSensor":"Senzor varia",
     "speedSensor":"Senzor rychlosti",
     "hdgSensor":"Senzor kurzu",
-    "distSensor":"Vzdálenost"
+    "distSensor":"Senz. vzdálenosti"
   },
   "en":{
-    "appName":"Artif.Hor.DC/DS-24",
+    "appName":"Horizon DC/DS-24",
     "fullName":"Artificial Horizon for DC/DS-24",
     "cfgName":"Artificial horizon settings",
     "rollSensor":"Roll sensor",
@@ -25,29 +25,18 @@
     "distSensor":"Distance sensor"
   },
   "de":{
-    "appName":"Artif.Hor.DC/DS-24",
-    "fullName":"Artificial Horizon for DC/DS-24",
-    "cfgName":"Artificial horizon settings",
-    "rollSensor":"Roll sensor",
-    "pitchSensor":"Pitch sensor",
-    "altSensor":"Altitude sensor",
-    "varioSensor":"Vario sensor",
-    "speedSensor":"Speed sensor",
-    "hdgSensor":"Heading sensor",
-    "distSensor":"Distance sensor"
+    "appName":"Horizont DC/DS-24",
+    "fullName":"Künstlicher Horizont für DC/DS-24"
+    "cfgName":"Einstellungen künstl. Horizont",
+    "rollSensor":"Rollsensor",
+    "pitchSensor":"Nicksensor",
+    "altSensor":"Höhensensor",
+    "varioSensor":"Variosensor",
+    "speedSensor":"Geschw.sensor",
+    "hdgSensor":"Richtungssensor",
+    "distSensor":"Entfernungssensor"
   },"fr":{
-    "appName":"Artif.Hor.DC/DS-24",
-    "fullName":"Artificial Horizon for DC/DS-24",
-    "cfgName":"Artificial horizon settings",
-    "rollSensor":"Roll sensor",
-    "pitchSensor":"Pitch sensor",
-    "altSensor":"Altitude sensor",
-    "varioSensor":"Vario sensor",
-    "speedSensor":"Speed sensor",
-    "hdgSensor":"Heading sensor",
-    "distSensor":"Distance sensor"
-  },"es":{
-    "appName":"Artif.Hor.DC/DS-24",
+    "appName":"Horizon DC/DS-24",
     "fullName":"Artificial Horizon for DC/DS-24",
     "cfgName":"Artificial horizon settings",
     "rollSensor":"Roll sensor",
@@ -59,15 +48,15 @@
     "distSensor":"Distance sensor"
   },
   "it":{
-    "appName":"Artif.Hor.DC/DS-24",
-    "fullName":"Artificial Horizon for DC/DS-24",
-    "cfgName":"Artificial horizon settings",
-    "rollSensor":"Roll sensor",
-    "pitchSensor":"Pitch sensor",
-    "altSensor":"Altitude sensor",
-    "varioSensor":"Vario sensor",
-    "speedSensor":"Speed sensor",
-    "hdgSensor":"Heading sensor",
-    "distSensor":"Distance sensor"
+    "appName":"Orizzonte DC/DS-24",
+    "fullName":"Orizzonte Artificiale DC/DS-24", 
+    "cfgName":"Impostazioni Orizzonte Artificiale",
+    "rollSensor":"Sensore Rollio",
+    "pitchSensor":"Sensore Beccheggio",
+    "altSensor":"Sensore Altitudine",
+    "varioSensor":"Sensore Vario",
+    "speedSensor":"Sensore Velocità,
+    "hdgSensor":"Sensore Direzione",
+    "distSensor":"Sensore Distanza"
   }
 }

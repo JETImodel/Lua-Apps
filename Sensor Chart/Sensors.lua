@@ -31,6 +31,7 @@
 -- # V1.0 - Initial release
 -- # V1.1 - Added choice of minimum sensor value
 -- # V1.2 - Text typo when using DC/DS-14/16
+-- # V1.3 - Improved translations to different languages
 -- #############################################################################
 
 
@@ -229,4 +230,4 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.2",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.3",name=lang.appName}

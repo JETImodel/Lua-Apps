@@ -27,17 +27,17 @@
     "modelName": "Model Name"
   },
   "de":{
-    "appName":"Discharged Flightpack Warning",
-    "cfgName":"Flightpack Sensor Settings",
+    "appName":"Warnung Flugakku entladen",
+    "cfgName":"Akkusensor Einstellungen",
     "voltage":"Spannung:",
-    "windowSmall":"Akku Spannung",
+    "windowSmall":"Akkuspannung",
     "sensor":"Spannungssensor Auswahl",
-    "selectSensor":"Wählen Sie Sensor",
-    "triggerVoltage": "Trigger above",
-    "warnVoltage": "Warn if below",
-    "settleTime": "Voltage settle time",
-    "warnAudio": "Pack Warning",
-    "modelName": "Model Name"
+    "selectSensor":"Sensorauswahl",
+    "triggerVoltage": "Triggerspannung",
+    "warnVoltage": "Warnspannung",
+    "settleTime": "Spannungseinstellzeit",
+    "warnAudio": "Warnung-Audio",
+    "modelName": "Modellname"
   },
   "fr":{
     "appName":"Discharged Flightpack Warning",
@@ -59,9 +59,9 @@
     "windowSmall":"Voltaggio Batteria",
     "sensor":"Seleziona Sensore Voltaggio",
     "selectSensor":"Scegli Sensore",
-    "triggerVoltage": "Innesco sopra",
+    "triggerVoltage": "Attiva sopra",
     "warnVoltage": "Avverti se inferiore a",
-    "settleTime": "Tempo attesa allarme",
+    "settleTime": "Tempo attesa voltaggio",
     "warnAudio": "Messaggio Allarme",
     "modelName": "Nome Modello"
   }

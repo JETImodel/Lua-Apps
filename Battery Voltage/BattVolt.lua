@@ -11,6 +11,7 @@
 -- # V1.0 - Initial release 
 -- # V1.1 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
 -- #        Detection of inactive sensor.
+-- # V1.2 - Improved translations to different languages
 -- #############################################################################
 
 --Configuration
@@ -190,7 +191,7 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.1",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.2",name=lang.appName}
 
 
 

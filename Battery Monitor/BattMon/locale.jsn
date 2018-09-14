@@ -29,9 +29,9 @@
     "average":"Mitte:",
     "pack":"Pack: %dS",
     "delta": "Delta: %dmV, balance: %s%%",
-    "windowSmall":"Akku Spannung",
+    "windowSmall":"Akkuspannung",
     "sensor":"Spannungssensor Auswahl",
-    "selectSensor":"Wählen Sie Sensor"
+    "selectSensor":"Sensorauswahl"
   },"fr":{
     "appName":"Battery Monitor",
     "cfgName":"Reglages",
@@ -42,17 +42,7 @@
     "windowSmall":"Battery Voltage",
     "sensor":"Sélection du senseur de tension",
     "selectSensor":"Sélection de senseur"
-  },"es":{
-    "appName":"Monitor de batería",
-    "cfgName":"Ajustes",
-    "voltage":"Tensión:",
-    "average":"Media:",
-    "pack":"Pack: %dS",
-    "delta": "Delta: %dmV, balance: %s%%",
-    "windowSmall":"Voltaje Batería",
-    "sensor":"Selección de sensor de tensión",
-    "selectSensor":"Selección de sensor"
-  },
+  } 
   "it":{
     "appName":"Monitor Batterie",
     "cfgName":"Impostazioni Monitor Batteria",

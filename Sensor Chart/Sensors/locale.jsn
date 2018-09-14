@@ -17,20 +17,13 @@
     "value":"Value"
   },
   "de":{
-    "appName":"Sensor chart",
-    "selectSensor":"Select sensor",
-    "maxValue":"Maximum value",
-    "minValue":"Minimum value",
-    "telChart":"Telemetry chart",
-    "value":"Value"
+    "appName":"Sensoranzeige",
+    "selectSensor":"Sensorauswahl",
+    "maxValue":"Maximum Wert",
+    "minValue":"Minimum Wert",
+    "telChart":"Telemetrieanzeige",
+    "value":"Wert"
   },"fr":{
-    "appName":"Sensor chart",
-    "selectSensor":"Select sensor",
-    "maxValue":"Maximum value",
-    "minValue":"Minimum value",
-    "telChart":"Telemetry chart",
-    "value":"Value"
-  },"es":{
     "appName":"Sensor chart",
     "selectSensor":"Select sensor",
     "maxValue":"Maximum value",
@@ -39,11 +32,11 @@
     "value":"Value"
   },
   "it":{
-    "appName":"Sensor chart",
-    "selectSensor":"Select sensor",
-    "maxValue":"Maximum value",
-    "minValue":"Minimum value",
-    "telChart":"Telemetry chart",
-    "value":"Value"
+    "appName":"Grafico Sensore",
+    "selectSensor":"Selezione sensore",
+    "maxValue":"Valore Massimo",
+    "minValue":"Valore Minimo",
+    "telChart":"Grafico Telemetria",
+    "value":"Valore"
   }
 }

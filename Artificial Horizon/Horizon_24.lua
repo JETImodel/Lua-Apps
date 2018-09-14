@@ -17,6 +17,8 @@
 -- https://github.com/wolkstein/MavLink_FrSkySPort
 --
 -- Version 1.0 - First official release, code cleanup
+--         1.1 - Forked to use the renderer on DC/DS-24
+--             - Translations to several languages
  
 local lang
 local ren=lcd.renderer()
@@ -681,4 +683,4 @@ end
 
 -- *****************************************************
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.00",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.01",name=lang.appName}

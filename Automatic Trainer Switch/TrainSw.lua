@@ -1,4 +1,7 @@
 -- Automatic trainer switch - Lua application for JETI DC/DS transmitters
+-- Version 1.0 - First official release
+--         1.1 - Translations to several languages
+
 --------------- 
 local lang
 local prevP1, prevP2, prevP3, prevP4
@@ -93,4 +96,4 @@ end
 
 ----------------- 
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.00",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.01",name=lang.appName}

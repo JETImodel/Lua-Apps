@@ -15,18 +15,12 @@
     "switch":"Switch"
   },
   "de":{
-    "appName":"Auto TrainSwitch",
-    "fullName":"Automatic Training Switch",
-    "audioTeacher":"Audio Teacher",
-    "audioStudent":"Audio Student",
-    "switch":"Switch"
+    "appName":"Auto-Trainersch.",
+    "fullName":"Trainerschalter automatisch",
+    "audioTeacher":"Audio Lehrer",
+    "audioStudent":"Audio Schüler",
+    "switch":"Schalter"
   },"fr":{
-    "appName":"Auto TrainSwitch",
-    "fullName":"Automatic Training Switch",
-    "audioTeacher":"Audio Teacher",
-    "audioStudent":"Audio Student",
-    "switch":"Switch"
-  },"es":{
     "appName":"Auto TrainSwitch",
     "fullName":"Automatic Training Switch",
     "audioTeacher":"Audio Teacher",
@@ -34,10 +28,10 @@
     "switch":"Switch"
   },
   "it":{
-    "appName":"Auto TrainSwitch",
-    "fullName":"Automatic Training Switch",
-    "audioTeacher":"Audio Teacher",
-    "audioStudent":"Audio Student",
-    "switch":"Switch"
+    "appName":"TrainSwitch Auto",
+    "fullName":"Interruttore Training Automatico",
+    "audioTeacher":"Audio Maestro",
+    "audioStudent":"Audio Allievo",
+    "switch":"Interruttore"
   }
 }

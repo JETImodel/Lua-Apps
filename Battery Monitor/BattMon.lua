@@ -12,6 +12,7 @@
 -- # V1.1 - Displayed voltage values for the graph axes
 -- # V1.2 - The readFile() function has been replaced by internal io.readall() (DC/DS FW V4.22)
 -- #        Better displayed on DC/DS-16/14. Detection of inactive sensor.
+-- # V1.3 - Improved translations to different languages 
 -- ############################################################################# 
 
 
@@ -421,7 +422,7 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.2",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.3",name=lang.appName}
 
 
 
