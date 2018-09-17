@@ -13,7 +13,7 @@
   "de":{
     "appName":"Drosselstopp / Piepton",
     "selectInput": "Wähle Eingang",
-    "bumpValue": "Piepwert (Mitte=0%)"
+    "bumpValue": "Vibration aktiv bei (Mitte=0%)"
   },
   "fr":{
     "appName":"Throttle Detent/Beep",

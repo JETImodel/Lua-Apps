@@ -35,8 +35,8 @@
     "selectSensor":"Sensorauswahl",
     "triggerVoltage": "Triggerspannung",
     "warnVoltage": "Warnspannung",
-    "settleTime": "Spannungseinstellzeit",
-    "warnAudio": "Warnung-Audio",
+    "settleTime": "Verzögerungszeit",
+    "warnAudio": "Sounddatei Warnung",
     "modelName": "Modellname"
   },
   "fr":{
