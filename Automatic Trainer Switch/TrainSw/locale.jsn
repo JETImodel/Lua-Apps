@@ -22,10 +22,10 @@
     "switch":"Schalter"
   },"fr":{
     "appName":"Auto TrainSwitch",
-    "fullName":"Automatic Training Switch",
-    "audioTeacher":"Audio Teacher",
-    "audioStudent":"Audio Student",
-    "switch":"Switch"
+    "fullName":"Interrupteur automatique d'écolage",
+    "audioTeacher":"Audio maître",
+    "audioStudent":"Audio élève",
+    "switch":"Interrupteur"
   },
   "it":{
     "appName":"TrainSwitch Auto",

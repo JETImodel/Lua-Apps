@@ -24,12 +24,12 @@
     "telChart":"Telemetrieanzeige",
     "value":"Wert"
   },"fr":{
-    "appName":"Sensor chart",
-    "selectSensor":"Select sensor",
-    "maxValue":"Maximum value",
-    "minValue":"Minimum value",
-    "telChart":"Telemetry chart",
-    "value":"Value"
+    "appName":"Liste des capteurs",
+    "selectSensor":"Sélection capteur",
+    "maxValue":"Valeur maximale",
+    "minValue":"Valeur minimale",
+    "telChart":"Liste télémétrie",
+    "value":"Valeur"
   },
   "it":{
     "appName":"Grafico Sensore",

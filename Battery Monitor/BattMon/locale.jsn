@@ -33,13 +33,13 @@
     "sensor":"Spannungssensor Auswahl",
     "selectSensor":"Sensorauswahl"
   },"fr":{
-    "appName":"Battery Monitor",
+    "appName":"Moniteur batterie",
     "cfgName":"Reglages",
     "voltage":"Tension:",
     "average":"Moyenne:",
     "pack":"Pack: %dS",
     "delta": "Delta: %dmV, balance: %s%%",
-    "windowSmall":"Battery Voltage",
+    "windowSmall":"Tension batterie",
     "sensor":"Sélection du senseur de tension",
     "selectSensor":"Sélection de senseur"
   } 

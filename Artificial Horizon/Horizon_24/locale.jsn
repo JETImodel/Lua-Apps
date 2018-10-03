@@ -37,15 +37,15 @@
     "distSensor":"Entfernungssensor"
   },"fr":{
     "appName":"Horizon DC/DS-24",
-    "fullName":"Artificial Horizon for DC/DS-24",
-    "cfgName":"Artificial horizon settings",
-    "rollSensor":"Roll sensor",
-    "pitchSensor":"Pitch sensor",
-    "altSensor":"Altitude sensor",
-    "varioSensor":"Vario sensor",
-    "speedSensor":"Speed sensor",
-    "hdgSensor":"Heading sensor",
-    "distSensor":"Distance sensor"
+    "fullName":"Horizon artificiel pour DS/DC24",
+    "cfgName":"Réglage horizon artificiel",
+    "rollSensor":"Capteur de roulis",
+    "pitchSensor":"Capteur tangage",
+    "altSensor":"Capteur d'altitude",
+    "varioSensor":"Capteur vario",
+    "speedSensor":"Capteur de vitesse",
+    "hdgSensor":"Capteur de direction",
+    "distSensor":"Capteur de distance"
   },
   "it":{
     "appName":"Orizzonte DC/DS-24",

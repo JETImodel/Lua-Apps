@@ -33,15 +33,15 @@
     "hdgSensor":"Richtungssensor",
     "distSensor":"Entfernungssensor"
   },"fr":{
-    "appName":"Artificial Horizon",
-    "cfgName":"Artificial horizon settings",
-    "rollSensor":"Roll sensor",
-    "pitchSensor":"Pitch sensor",
-    "altSensor":"Altitude sensor",
-    "varioSensor":"Vario sensor",
-    "speedSensor":"Speed sensor",
-    "hdgSensor":"Heading sensor",
-    "distSensor":"Distance sensor"
+    "appName":"Horizon artificiel", 
+    "cfgName":"Réglage horizon artificiel",
+    "rollSensor":"Capteur de roulis",
+    "pitchSensor":"Capteur tangage",
+    "altSensor":"Capteur d'altitude",
+    "varioSensor":"Capteur vario",
+    "speedSensor":"Capteur de vitesse",
+    "hdgSensor":"Capteur de direction",
+    "distSensor":"Capteur de distance"
   },
   "it":{
     "appName":"Orizzonte Artificiale",

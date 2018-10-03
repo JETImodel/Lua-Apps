@@ -24,10 +24,10 @@
     "sensor":"Spannungssensor Auswahl",
     "selectSensor":"Sensorauswahl"
   },"fr":{
-    "appName":"Battery Voltage",
+    "appName":"Tension batterie",
     "cfgName":"Reglages",
     "voltage":"Tension:", 
-    "windowSmall":"Battery Voltage",
+    "windowSmall":"Tension batterie",
     "sensor":"Sélection du senseur de tension",
     "selectSensor":"Sélection de senseur"
   },

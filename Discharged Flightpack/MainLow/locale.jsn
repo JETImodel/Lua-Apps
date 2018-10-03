@@ -40,17 +40,17 @@
     "modelName": "Modellname"
   },
   "fr":{
-    "appName":"Discharged Flightpack Warning",
-    "cfgName":"Flightpack Sensor Settings",
+    "appName":"Alerte décharge batterie",
+    "cfgName":"Réglage capteur batterie de vol",
     "voltage":"Tension:",
-    "windowSmall":"Battery Voltage",
+    "windowSmall":"Tension batterie",
     "sensor":"Sélection du senseur de tension",
     "selectSensor":"Sélection de senseur", 
-    "triggerVoltage": "Trigger above",
-    "warnVoltage": "Warn if below",
-    "settleTime": "Voltage settle time",
-    "warnAudio": "Pack Warning",
-    "modelName": "Model Name"
+    "triggerVoltage": "Tension du capteur",
+    "warnVoltage": "Avertir si:",
+    "settleTime": "Temps de stabilisation tension",
+    "warnAudio": "Avertissement Pack",
+    "modelName": "Nom du modèle"
   },
    "it":{
     "appName":"Allarme Batteria",
