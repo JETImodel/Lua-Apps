@@ -21,8 +21,7 @@ local sensorId=0
 local sensorsAvailable = {}
 
 local lang
-local options={}
-local appName="Battery Voltage"
+local options={} 
 local cellfull, cellempty = 4.2, 3.00
                                             
 local cell = {0, 0, 0, 0, 0 ,0} 

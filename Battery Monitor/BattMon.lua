@@ -23,8 +23,7 @@ local sensorId=0
 local sensorsAvailable = {}
 
 local lang
-local options={}
-local appName="Battery Monitor"
+local options={} 
 local cellfull, cellempty = 4.2, 3.00
 -- Lipo discharge table
 local myArrayPercentList =                                                

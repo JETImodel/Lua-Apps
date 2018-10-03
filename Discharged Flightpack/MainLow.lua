@@ -23,8 +23,7 @@ local paramId=0
 local sensorsAvailable = {}
 
 local lang
-local options={}
-local appName="Discharged Flightpack Warning"
+local options={} 
 local thresholdV = 200
 local thresholdVReal = 20.0
 local warnV = 320
