@@ -50,7 +50,7 @@
     "pitchSensor":"Sensore Beccheggio",
     "altSensor":"Sensore Altitudine",
     "varioSensor":"Sensore Vario",
-    "speedSensor":"Sensore Velocità,
+    "speedSensor":"Sensore Velocità",
     "hdgSensor":"Sensore Direzione",
     "distSensor":"Sensore Distanza"
   }

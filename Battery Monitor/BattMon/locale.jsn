@@ -42,7 +42,7 @@
     "windowSmall":"Tension batterie",
     "sensor":"Sélection du senseur de tension",
     "selectSensor":"Sélection de senseur"
-  } 
+  }, 
   "it":{
     "appName":"Monitor Batterie",
     "cfgName":"Impostazioni Monitor Batteria",

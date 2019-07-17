@@ -26,7 +26,7 @@
   },
   "de":{
     "appName":"Horizont DC/DS-24",
-    "fullName":"Künstlicher Horizont für DC/DS-24"
+    "fullName":"Künstlicher Horizont für DC/DS-24",
     "cfgName":"Einstellungen künstl. Horizont",
     "rollSensor":"Rollsensor",
     "pitchSensor":"Nicksensor",
@@ -55,7 +55,7 @@
     "pitchSensor":"Sensore Beccheggio",
     "altSensor":"Sensore Altitudine",
     "varioSensor":"Sensore Vario",
-    "speedSensor":"Sensore Velocità,
+    "speedSensor":"Sensore Velocità",
     "hdgSensor":"Sensore Direzione",
     "distSensor":"Sensore Distanza"
   }
