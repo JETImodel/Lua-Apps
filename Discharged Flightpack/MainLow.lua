@@ -104,7 +104,7 @@ local function thresholdVChanged(value)
 end
 
 local function warnVChanged(value)
-  if (value and value >= 200) then
+  if (value and value >= 41) then
     warnV = value
     warnVReal = warnV/10.0
     system.pSave("warnV", warnV)
