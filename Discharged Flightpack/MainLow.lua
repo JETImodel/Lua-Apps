@@ -104,7 +104,7 @@ local function thresholdVChanged(value)
 end
 
 local function warnVChanged(value)
-  if (value and value >= 41) then
+  if (value and value >= thresholdV) then
     warnV = value
     warnVReal = warnV/10.0
     system.pSave("warnV", warnV)
@@ -161,7 +161,7 @@ local function initForm(formID)
   form.addIntbox(thresholdV,20,84,84,1,1, thresholdVChanged,{label="V"})
   form.addRow(2)
   form.addLabel({label=lang.warnVoltage, width=230})
-  form.addIntbox(warnV,41,840,410,1,1, warnVChanged,{label="V"})
+  form.addIntbox(warnV,20,840,410,1,1, warnVChanged,{label="V"})
   form.addRow(2)
   form.addLabel({label=lang.settleTime, width=230})
   form.addIntbox(voltageSettleTime,1,10,2,0,1, voltageSettleTimeChanged,{label="s"})
