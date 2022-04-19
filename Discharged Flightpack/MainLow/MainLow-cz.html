@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kontrola baterie</title>
+</head>
+<body>
+<h1>Kontrola baterie</h1>
+<p><img src="img/MainLow.png" alt="Kontrola baterie"></p>
+<h2>Popis</h2>
+<ul>
+<li>
+<p>Aplikace spustí varování, jestliže je připojena vybitá pohonná sada. Toto je sice poměrně jednoduchá úloha, když máte připojenu pouze jednu bateriovou sadu, avšak situace se značně komplikuje při použití např. regulátoru Mezon 90 a sekundární baterie pro napájení přijímače, přičemž pohonná baterie se připojuje později.</p>
+</li>
+<li>
+<p>Oznámení názvu modelu za pomoci uživatelem zvoleného audio souboru. Zatímco by mohla být tato funkce provedena v samostatném Lua skriptu, na základě omezení pro max. 10 skriptů na vysílači bylo oznámení názvu modelu implementováno zde.<p>
+</li>
+</ul>
+<p>Obě výše zmíněné funkce mohou být implementovány s pomocí různých kombinací telemetrických ovladačů a logických spínačů, avšak toto nastavování je poměrně komplikované a ne vždy plně spolehlivé. Tato aplikace implementuje potřebnou funkcionalitu poměrně jednoduše s pomocí skriptovacích schopností JETI DS/DC-16 a JETI DC/DS-24.</p>
+<h3>Konfigurace aplikace</h3>
+<p>Konfigurace aplikace je dostupná pod položkou "Kontrola baterie" v menu <strong>Časovače/senzory</strong>.</p>
+<h3>Detaily alarmu vybité baterie</h3>
+<p>Aplikace má tři klíčové prametry</p>
+<ul>
+<li>
+<p><strong>Spustit při napětí (v)</strong> - dokud specifikovaný senzor nedetekuje napětí, které je nad úrovní spouštěcího napětí, nebudou aplikací generovány žádné alarmy. Toto umožní použít záložní přijímačovou baterii, ze které je napájen i regulátor MEZON bez toho, aby byl spuštěn alarm nízkého napětí.</p>
+</li>
+<li>
+<p><strong>Čas ustálení napětí</strong> - jakmile senzor detekuje napětí nad zadanou prahovou hodnotou, systém počká zadanou dobu specifikovanou tímto parametrem, než se kondenzátory nabijí a regulátor začne hlásit korektní napětí sady.</p>
+</li>
+<li>
+<p><strong>Alarm při napětí pod (v)</strong> - jakmile se spustí kontrola napětí baterie (viz výše),systém vygeneruje alarm, jestliže je napětí pohonné baterie <em>nižší</em> než zde zadaná hodnota. Například u modelu F3A poháněného desetičlánkem LiPol můžeme nastavit rozhodovací napětí alarmu mezi 41 a 41.6V, protože plně nabitý desetičlánek by měl mít po připojení alespoň 41V bez zátěže.</p>
+</li>
+</ul>
+ <p>Zdrojové kódy můžete stáhnout z oficiálního repozitáře <a href="https://github.com/JETImodel/Lua-Apps">JETImodel Lua-Apps GitHub</a>. </p>
+</body>
+</html>

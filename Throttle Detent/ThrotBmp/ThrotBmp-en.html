@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Throttle Detent/Beep</title>
+</head>
+<body>
+<h1>Throttle Detent/Beep</h1>
+<p><img src="img/ThroBmp.png" alt="Throttle Detent/Beep"></p>
+<h2>Description</h2> 
+<p>This app engages the stick vibration and emits a beep when the throttle stick is positioned within a few percent of a user-specified position. Unlike the trivial "sound on event" feature built-in to the radio that only beeps the stick at center, this will let you have a shake and a beep at any arbitrary position of the stick.
+ 
+</p>
+<h2>Usage</h2>
+  <ol>
+    <li>
+      <p>In the menu, choose <i>Applications - User Applications.</i> Press the <strong>F(3)</strong> key to open the application browser. Select the "ThroBmp" file here.</p>
+    </li>
+    <li>
+      <p>In the settings (under <i>Advanced Properties</i>) you can select the input to use (should be P1 through P4, and be sure to set it to proportional mode) and the value (-100 to 100) at which the "bump" should be triggered. For example, if I want my stick detent at 60% throttle in mode 2 or mode 4, I set the P4 control in proportional mode and set the target value to 20.</p>
+    </li>
+    <li>
+      <p>Stick will vibrate briefly and you'll hear a 100ms 430hz beep when you are at the target value +/- 1%. It will not vibrate again until you move off the target value and come back.</p>
+    </li>
+  </ol>
+ <p>You can download the source code from  the official <a href="https://github.com/JETImodel/Lua-Apps">JETImodel Lua-Apps GitHub repository</a>.  </p>
+</body>
+</html>
