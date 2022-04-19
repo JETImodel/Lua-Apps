@@ -90,8 +90,8 @@ local function sensor2Changed(value)
   if value>0 then
     sensor2Id=sensorsAvailable[value].id
     param2Id=sensorsAvailable[value].param
-    system.pSave("sensor2",sensor1Id)
-    system.pSave("param2",param1Id)
+    system.pSave("sensor2",sensor2Id)
+    system.pSave("param2",param2Id)
   end      
 end
 
