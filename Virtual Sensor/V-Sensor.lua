@@ -235,7 +235,7 @@ local function init()
   sensor1Id = system.pLoad("sensor1")
   param1Id = system.pLoad("param1")
   sensor2Id = system.pLoad("sensor2")
-  param12d = system.pLoad("param2")
+  param2Id = system.pLoad("param2")
   condition = system.pLoad("cond","")
   conditionChanged = true
   paramName = system.pLoad("name","")
