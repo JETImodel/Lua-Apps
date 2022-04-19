@@ -28,7 +28,8 @@
 -- # of the authors and should not be interpreted as representing official policies,
 -- # either expressed or implied, of the FreeBSD Project.                    
 -- #                       
--- # V1.0 - Initial release
+-- # V1.00 - Initial release
+-- # V1.01 - Fix second sensor not saving after shutdown
 -- #############################################################################
 
 
@@ -284,4 +285,4 @@ end
 
 --------------------------------------------------------------------
 setLanguage()
-return { init=init, loop=loop, author="JETI model", version="1.00",name=lang.appName}
+return { init=init, loop=loop, author="JETI model", version="1.01",name=lang.appName}
