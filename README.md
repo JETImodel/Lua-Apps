@@ -2,11 +2,8 @@
 Official Lua applications for DC/DS transmitters. Applications should be located in the Apps folder of the internal SD card.
 >**Note:** The applications in this repository are compatible with the firmware version **4.22** of JETI DC/DS transmitters. Older versions are **_not supported_**.
 
-![img](http://www.jetimodel.com/files/photo-thumb/DSCN7506.jpg)
 
-
-
-Complete Lua API description can be found here: http://www.jetimodel.com/en/DC-DS-24-Lua-API-1/
+Complete Lua API description can be found here: [JETI lua API v1.5](Doc/JETI%20DCDS_Lua_API_1.5.pdf)
 
 Based on Lua 5.3.1:
 - http://www.lua.org/
