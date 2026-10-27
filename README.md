@@ -3,7 +3,7 @@ Official Lua applications for DC/DS transmitters. Applications should be located
 >**Note:** The applications in this repository are compatible with the firmware version **4.22** of JETI DC/DS transmitters. Older versions are **_not supported_**.
 
 
-Complete Lua API description can be found here: [JETI lua API v1.5](Doc/JETI%20DCDS_Lua_API_1.5.pdf)
+Complete Lua API description can be found here: [JETI lua API v1.7](Doc/JETI%20DCDS_Lua_API_1.7.pdf)
 
 Based on Lua 5.3.1:
 - http://www.lua.org/
@@ -58,4 +58,4 @@ Using this procedure you will install the Lua application source files to your t
 
 **Notes:**
 - The file extension of compiled apps is set to **\*.LC** which differenciates them from source-code based apps with **\*.LUA** extension. Please note that even if the application names are the same, the resulting apps are considered different to each other.  
-- The compilation can be done using the [Lua Src Dumper](Src Dumper) application installed in DC-24 Emulator. The emulator is an integral part of the [JETI Studio software](http://www.jetimodel.com/en/JETI-Studio-2/).
+- The compilation can be done using the [Lua Src Dumper](Src Dumper) application installed in DC-24 Emulator. The emulator is an integral part of the [JETI Studio software](https://www.jetimodel.com/support/jeti-studio/jeti-studio.html).
