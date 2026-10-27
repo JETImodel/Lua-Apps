@@ -42,7 +42,7 @@ The second option is available for expert users and developers and allows you to
 ### 1) Install a ready-made pack
 We have prepared a set of compiled applications packed in a ZIP archive. The compilation process reduces memory requirements of the apps, and we recommend running this pack on DC/DS-16 and DC/DS-14.
 1. Connect the transmitter to your PC and establish a link via USB (the transmitter is registered as a mass-storage device).
-2. Download the latest release of compiled apps from this repository: [Release-Compiled.zip](Release-Compiled.zip).
+2. Download the latest release of compiled apps from this repository: [Release-Compiled.zip](/releases/latest/download/Release-Compiled.zip).
 3. Unzip all files to your transmitter into the **Apps** folder.
 4. Disconnect the transmitter and locate its menu *Applications - User Applications*.
 5. Select the application you want and activate it.
